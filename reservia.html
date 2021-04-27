@@ -14,9 +14,9 @@
         <!-- Menu de navigation -->
         <nav>
           <ul class="menu">
-            <li><a href="#hebergements" class="li-heb">Hébergements</a></li>
-            <li><a href="#activites" class="li-act">Activités</a></li>
-            <li><a href="#inscription" class="li-signup"><span>S'inscire</span></a></li>
+            <li><a href="#hebergements" class="lien-heb">Hébergements</a></li>
+            <li><a href="#activites" class="lien-act">Activités</a></li>
+            <li><a href="#inscription" class="lien-signup"><span>S'inscire</span></a></li>
           </ul>
         </nav>
       </div>
@@ -25,7 +25,7 @@
         <h2>Trouver votre hébergement pour des vacances de rêve</h2>
         <p class="subtitle">En plein centre ville ou en pleine nature</p>
         <div class="barre-recherche">
-          <button type="button" name="geolocalisation" class="geoloc"><i class="fas fa-map-marker-alt fa-2x"></i></button> <!-- Bouton sur le logo de géolocalisation qui permettra d'afficher la map -->
+          <button type="button" name="geolocalisation" class="geoloc"><i class="fas fa-map-marker-alt fa-lg"></i></button> <!-- Bouton sur le logo de géolocalisation qui permettra d'afficher la map -->
           <input type="search" value="Marseille, France" class="zone-recherche">
           <button type="button" name="search" class="search">Rechercher</button>
         </div>
@@ -33,10 +33,10 @@
         <div class="listefiltres">
           <h3>Filtres</h3>  <!-- Boutons qui permettront aux utilisateurs de filtrer les hébergements selon les différents critères proposés ci-dessous -->
           <div class="btnfiltres">
-            <button type="button" name="filtre-eco" class="filtre"><i class="fas fa-money-bill-wave iconefiltre"></i><span>Économique</span></button>
-            <button type="button" name="filtre-familial" class="filtre"><i class="fas fa-child iconefiltre"></i><span>Familial</span></button>
-            <button type="button" name="filtre-romantique" class="filtre"><i class="fas fa-heart iconefiltre"></i><span>Romantique</span></button>
-            <button type="button" name="filtre-animaux" class="filtre"><i class="fas fa-dog iconefiltre"></i><span>Animaux autorisés</span></button>
+            <button type="button" name="filtre-eco" class="filtre filtre-eco"><i class="fas fa-money-bill-wave fa-lg iconefiltre"></i><span>Économique</span></button>
+            <button type="button" name="filtre-familial" class="filtre filtre-familial"><i class="fas fa-child fa-lg iconefiltre"></i><span>Familial</span></button>
+            <button type="button" name="filtre-romantique" class="filtre filtre-romantique"><i class="fas fa-heart fa-lg iconefiltre"></i><span>Romantique</span></button>
+            <button type="button" name="filtre-animaux" class="filtre filtre-animaux"><i class="fas fa-dog fa-lg iconefiltre"></i><span>Animaux autorisés</span></button>
           </div>
         </div>
         <p><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
@@ -45,7 +45,7 @@
 
     <main>
       <!-- Tous les hébergements -->
-      <div class="hebergements">
+      <div id="hebergements">
         <!-- liste des hébergements -->
         <div class="hebliste">
           <h2>Hébergements à Marseille</h2>
@@ -169,7 +169,7 @@
         </div>
       </div>
       <!-- Activités possibles -->
-      <div class="activites">
+      <div id="activites">
         <div class="format-xl">
           <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="aportrait">
           <h4>Vieux Port</h4>
