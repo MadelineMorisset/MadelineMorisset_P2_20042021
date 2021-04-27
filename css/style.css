@@ -47,3 +47,48 @@ nav {
 .lien-heb:hover, .lien-act:hover, .lien-heb:focus, .lien-act:focus {
   border-top: 2px solid #0065fc;/* affichage de la bordure supérieure (2px de large, ligne continue, bleue) lors du survol et de la selection d'un lien */
   }
+
+  /*--------------------------- Zone de recherche --------------------------*/
+
+.recherche {margin-top: 52px;}
+
+.subtitle {margin-top: -13px; font-size: 1em;}
+
+     /*----------------------- Barre de recherche -----------------------*/
+
+.barre-recherche {height: 50px; margin-top: 30px; display: flex;}
+
+/*  Bouton géolocalisation */
+.geoloc {
+  width: 50px;
+  background-color: #f2f2f2;
+  border-radius: 15px 0 0 15px;
+  margin-right: -1px;
+}
+
+.fa-map-marker-alt {color: #000;}
+
+.a-map-marker-alt:hover, .a-map-marker-alt:focus {color: #0065fc;}
+
+/* Zone de saisie */
+.zone-recherche {
+  font-weight: bold;
+  width: 220px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+/* Bouton "Rechercher" */
+.search {
+  color: #fff;
+  background-color: #0065fc;
+  width: 125px;
+  border: 1px #0065fc solid;
+  border-radius: 0 15px 15px 0;
+}
+
+.geoloc, .zone-recherche {border: 1px #f2f2f2 solid;}
+
+.geoloc, .zone-recherche, .search {height: 50px;}
+
+.zone-recherche, .search {font-size: 17px;}
