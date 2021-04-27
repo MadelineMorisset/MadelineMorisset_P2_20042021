@@ -11,3 +11,39 @@
 }
 
 body {margin: 53px; font-family: Raleway;}
+
+
+/*___________________________________ Header ___________________________________*/
+
+.header {margin: -53px; padding: 53px 53px 25px 53px;}
+
+span  {font-weight: bolder;}
+
+.logo {float: left;}
+
+  /*-------------------------- Barre de navigation --------------------------*/
+nav {
+  font-size: 18px;
+  padding-top: 1px;
+}
+
+.menu {padding-left: 70%;}
+
+.menu li {margin-right: 3%;}
+
+.menu li a {
+  padding: 69px 29px 8px 29px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+}
+
+.lien-heb, .lien-act {color: #000;} /* couleur de la police par défaut : noir */
+
+.lien-signup, .menu li a:hover, .menu li a:focus {
+  color: #0065fc; /* couleur de la police du lien d'inscription ou lors du survol et de la selection des deux autres liens du "nav" : bleu */
+}
+
+.lien-heb:hover, .lien-act:hover, .lien-heb:focus, .lien-act:focus {
+  border-top: 2px solid #0065fc;/* affichage de la bordure supérieure (2px de large, ligne continue, bleue) lors du survol et de la selection d'un lien */
+  }
