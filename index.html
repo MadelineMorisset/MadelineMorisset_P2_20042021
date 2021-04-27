@@ -3,30 +3,43 @@
   <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="https://kit.fontawesome.com/23c1a897ea.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/23c1a897ea.js" crossorigin="anonymous"></script> <!-- Ajout du script permettant d'utiliser les icônes Font Awesome -->
     <title>Reservia</title>
   </head>
+
   <body>
     <header>
-      <img src="images/logo/Reservia.svg" title="Logo Reservia" />
-      <!-- Menu de navigation -->
-      <nav>
-        <ul class="menu">
-          <li><a href="#hebergements">Hébergements</a></li>
-          <li><a href="#activites">Activités</a></li>
-          <li><a href="#inscription"><span>S'inscire</span></a></li>
-        </ul>
-      </nav>
-      <!-- Barre de recherche et filtres -->
+      <div class="header">
+        <img src="images/logo/Reservia.svg" title="Logo Reservia" class="logo">
+        <!-- Menu de navigation -->
+        <nav>
+          <ul class="menu">
+            <li><a href="#hebergements" class="li-heb">Hébergements</a></li>
+            <li><a href="#activites" class="li-act">Activités</a></li>
+            <li><a href="#inscription" class="li-signup"><span>S'inscire</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Barre de recherche par ville/village -->
       <div class="recherche">
-        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65696.76604181316!2d5.3191870538798645!3d43.3055859464128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bf4344da5333%3A0x40819a5fd970220!2sMarseille!5e0!3m2!1sfr!2sfr!4v1619096378538!5m2!1sfr!2sfr">
-          <i class="fas fa-map-marker-alt"></i>
-        </a>
-        <input type="search" value="Marseille, France">
-        <button type="button" name="button">Rechercher</button>
-        <h2>Filtres</h2>
+        <h2>Trouver votre hébergement pour des vacances de rêve</h2>
+        <p class="subtitle">En plein centre ville ou en pleine nature</p>
+        <div class="barre-recherche">
+          <button type="button" name="geolocalisation" class="geoloc"><i class="fas fa-map-marker-alt fa-2x"></i></button> <!-- Bouton sur le logo de géolocalisation qui permettra d'afficher la map -->
+          <input type="search" value="Marseille, France" class="zone-recherche">
+          <button type="button" name="search" class="search">Rechercher</button>
+        </div>
+        <!-- Recherche par filtre -->
+        <div class="listefiltres">
+          <h3>Filtres</h3>  <!-- Boutons qui permettront aux utilisateurs de filtrer les hébergements selon les différents critères proposés ci-dessous -->
+          <div class="btnfiltres">
+            <button type="button" name="filtre-eco" class="filtre"><i class="fas fa-money-bill-wave iconefiltre"></i><span>Économique</span></button>
+            <button type="button" name="filtre-familial" class="filtre"><i class="fas fa-child iconefiltre"></i><span>Familial</span></button>
+            <button type="button" name="filtre-romantique" class="filtre"><i class="fas fa-heart iconefiltre"></i><span>Romantique</span></button>
+            <button type="button" name="filtre-animaux" class="filtre"><i class="fas fa-dog iconefiltre"></i><span>Animaux autorisés</span></button>
+          </div>
+        </div>
+        <p><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
     </header>
     <main>
