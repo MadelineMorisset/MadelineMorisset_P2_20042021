@@ -1,6 +1,6 @@
 /*____________________________________ Body ____________________________________*/
 
-@@font-face {
+@font-face {
   font-family: 'Raleway';
   src: url('font/Raleway.eot');
   src: url('font/Raleway.eot?iefix') format('embedded-opentyper'),
@@ -10,12 +10,14 @@
        url('font/Raleway.svg#Raleway') format('svg');
 }
 
-body {margin: 53px; font-family: Raleway;}
+body {margin: 53px 65px; font-family: Raleway; min-width: 1200px;}
+
+     /*--------------- Code multi-éléments & de diverses div ---------------*/
 
 
 /*___________________________________ Header ___________________________________*/
 
-.header {margin: -53px; padding: 53px 53px 25px 53px;}
+.header {width: 100%; height: 34px;}
 
 span  {font-weight: bolder;}
 
@@ -23,19 +25,19 @@ span  {font-weight: bolder;}
 
   /*-------------------------- Barre de navigation --------------------------*/
 nav {
-  font-size: 18px;
-  padding-top: 1px;
+  font-size: 1em;
+  width: 436px;
+  float: right;
 }
 
-.menu {padding-left: 70%;}
+.menu {padding: 0 0.5% 0 0.5%; display: flex; list-style-type: none;}
 
 .menu li {margin-right: 3%;}
 
 .menu li a {
-  padding: 69px 29px 8px 29px;
   text-align: center;
   text-decoration: none;
-  position: relative;
+  padding: 66px 28px 0 28px;
 }
 
 .lien-heb, .lien-act {color: #000;} /* couleur de la police par défaut : noir */
@@ -44,9 +46,9 @@ nav {
   color: #0065fc; /* couleur de la police du lien d'inscription ou lors du survol et de la selection des deux autres liens du "nav" : bleu */
 }
 
-.lien-heb:hover, .lien-act:hover, .lien-heb:focus, .lien-act:focus {
+.menu li a:hover, .menu li a:focus {
   border-top: 2px solid #0065fc;/* affichage de la bordure supérieure (2px de large, ligne continue, bleue) lors du survol et de la selection d'un lien */
-  }
+}
 
   /*--------------------------- Zone de recherche --------------------------*/
 
@@ -54,17 +56,29 @@ nav {
 
 .subtitle {margin-top: -13px; font-size: 1em;}
 
+.barre-recherche, .listefiltres, .btnfiltres {display: flex;}
+
+.geoloc, .zone-recherche, .search, .listefiltres, .filtre {height: 50px;}
+
+.geoloc, .zone-recherche {border: 2px #f2f2f2 solid;}
+
+.zone-recherche, .search {font-size: 17px;}
+
      /*----------------------- Barre de recherche -----------------------*/
 
-.barre-recherche {height: 50px; margin-top: 30px; display: flex;}
+.barre-recherche {height: 50px; margin-top: 30px;}
 
 /*  Bouton géolocalisation */
 .geoloc {
   width: 50px;
   background-color: #f2f2f2;
+  border: 2px #dfdfdf solid;
+  border-right: none;
   border-radius: 15px 0 0 15px;
-  margin-right: -1px;
+  margin-right: -2px;
 }
+
+.geoloc:hover, .geoloc:focus {background-color: #dfdfdf;}
 
 .fa-map-marker-alt {color: #000;}
 
@@ -72,10 +86,12 @@ nav {
 
 /* Zone de saisie */
 .zone-recherche {
-  font-weight: bold;
+  font-weight: thin bold;
   width: 220px;
   margin-bottom: 10px;
   padding-left: 15px;
+  border: 2px #dfdfdf solid;
+  border-left: none;
 }
 
 /* Bouton "Rechercher" */
@@ -83,12 +99,77 @@ nav {
   color: #fff;
   background-color: #0065fc;
   width: 125px;
+  margin-left: -2px;
   border: 1px #0065fc solid;
   border-radius: 0 15px 15px 0;
 }
 
-.geoloc, .zone-recherche {border: 1px #f2f2f2 solid;}
+     /*---------------------- Filtres de recherche ----------------------*/
 
-.geoloc, .zone-recherche, .search {height: 50px;}
+.listefiltres {width: 100%; margin-top: 31px;}
 
-.zone-recherche, .search {font-size: 17px;}
+.listefiltres h3 {margin-top: 12px;}
+
+.filtres {text-decoration: none;}
+
+.btnfiltres {margin-left: 32px;}
+
+.filtre:hover, .filtre:focus {box-shadow: 2px 1px 1px #d9d9d9;}
+
+.iconefiltre {
+  color: #0065fc;
+  background-color: #deebff;
+  border-radius: 50px/ 50px;
+  float: left;
+  margin-right: -20px;
+  position: relative;
+  z-index: 1;
+}
+
+.fa-money-bill-wave {width: 39px;  margin-right: -50px;  padding: 17px 0 0 11px;}
+
+.fa-child {width: 33px; margin-right: -50px; padding: 17px 0 0 17px;}
+
+.fa-heart {width: 36px;   margin-right: -50px; padding: 17px 0 0 14px;}
+
+.fa-dog {
+  width: 37px;
+  height: 35px;
+  margin-right: -50px;
+  padding: 15px 0 0 13px;
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart {height: 32px;}
+
+.filtre {
+  font-weight: bold;
+  margin-right: 24px;
+  border: 2px #d9d9d9 solid;
+  border-radius: 50px/ 50px;
+  background-color: #fff;
+}
+
+.filtre-eco, .filtre-familial, .filtre-romantique, .filtre-animaux {padding-left: 40px;}
+
+.filtre-eco {width: 194px;}
+
+.filtre-familial {width: 152px;}
+
+.filtre-romantique {width: 184px;}
+
+.filtre-animaux {width: 242px;}
+
+     /*------------ Ligne informative : nombre hébergements dispo -----------*/
+
+.info {width: 100%; height: 24px; margin: 35px 0 0 0;}
+
+.fa-info {
+  width: 13px;
+  height: 17px;
+  color: #0065fc;
+  background-color: #fff;
+  border: 2px #d9d9d9 solid;
+  border-radius: 50px/ 50px;
+  margin: 0 18px 0 9px;
+  padding: 4px 0 0 8px;
+}
