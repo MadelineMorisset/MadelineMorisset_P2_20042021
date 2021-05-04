@@ -258,3 +258,85 @@ nav {
 }
 
 #more :hover, #more:focus {text-decoration: underline;}
+
+     /*--------------------- Héébergements populaires --------------------*/
+
+.populiste {
+  width: 30%;
+  height: 710px;
+  float: right;
+  margin-top: 37px;
+  background-color: #d9d9d9;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.en-tete-populaire {
+  width: 90%;
+  margin: 30px 20px -2px 25px;
+  display: inline-flex;
+}
+
+.populiste h2 {
+  width: 95%;
+  margin-left: 20px;
+}
+
+.fa-chart-line {
+  height: 100%;
+  margin: 18px 20px 0 0;
+  float: right;
+}
+
+.pconteneur-flexible {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: -1px 10px 5px 10px;
+  padding: 0 2.8%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.pélément-flexible {
+  display: flex;
+  max-width: 95%;
+  height: 165px;
+  background-color: #fff;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 4px 2px 5px #bdbdbd;
+  margin: 9px  20px  20px  20px;
+  padding: 0.5% 8% 0.5% 0.5%;
+}
+
+.pfigure {
+  width: 100%;
+  min-height: 150px;
+  max-height: 165px;
+  margin: 1.5%;
+  display: flex;
+
+}
+
+.imghebpopulaire {
+  image-orientation: left;
+  width: 40%;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+  object-fit: cover; /* permet de remplir l'espace souhaité et de garder les proportions de l'img (img visuellement non écrasée)*/
+}
+
+.pfigcaption {
+  max-width: 170px;
+  margin: 15px 0 0 20px;
+  position: relative; /* mise en flux normal pour pouvoir travailler .notehebpopulaire tout en bas de ces figcaption */
+}
+
+.pfigcaption h4 {font-weight: bolder; width: 100%; margin: 1% 0 3% 5%;}
+
+.pfigcaption p {margin: 0 5% 2% 5%; max-width: 100%;}
+
+.notehebpopulaire {
+  position: absolute; /* retirer l'élément du flux normal */
+  bottom: 0; /* positionnement de l'élément tout en bas de .pfigure */
+  margin-left: 3%; /* une marge de 3% pour l'aligner avec les autres élément de .pfigcaption */
+  } /*
