@@ -10,35 +10,23 @@
        url('font/Raleway.svg#Raleway') format('svg');
 }
 
-body {margin: 53px 65px; font-family: Raleway; min-width: 1200px;}
+body {font-family: Raleway;}
 
      /*--------------- Code multi-éléments & de diverses div ---------------*/
 
 
 /*___________________________________ Header ___________________________________*/
 
-.header {width: 100%; height: 34px;}
-
 span  {font-weight: bolder;}
 
 .logo {float: left;}
 
   /*-------------------------- Barre de navigation --------------------------*/
-nav {
-  font-size: 1em;
-  width: 436px;
-  float: right;
-}
+nav {font-size: 1em;}
 
-.menu {padding: 0 0.5% 0 0.5%; display: flex; list-style-type: none;}
+.menu {display: flex; list-style-type: none;}
 
-.menu li {margin-right: 3%;}
-
-.menu li a {
-  text-align: center;
-  text-decoration: none;
-  padding: 66px 28px 0 28px;
-}
+.menu li a {text-align: center; text-decoration: none;}
 
 .lien-heb, .lien-act {color: #000;} /* couleur de la police par défaut : noir */
 
@@ -52,9 +40,7 @@ nav {
 
   /*--------------------------- Zone de recherche --------------------------*/
 
-.recherche {margin-top: 52px;}
-
-.subtitle {margin-top: -13px; font-size: 1em;}
+.subtitle {font-size: 1em;}
 
 .barre-recherche, .listefiltres, .btnfiltres {display: flex;}
 
@@ -66,7 +52,7 @@ nav {
 
      /*----------------------- Barre de recherche -----------------------*/
 
-.barre-recherche {height: 50px; margin-top: 30px;}
+.barre-recherche {height: 50px;}
 
 /*  Bouton géolocalisation */
 .geoloc {
@@ -87,9 +73,6 @@ nav {
 /* Zone de saisie */
 .zone-recherche {
   font-weight: thin bold;
-  width: 220px;
-  margin-bottom: 10px;
-  padding-left: 15px;
   border: 2px #dfdfdf solid;
   border-left: none;
 }
@@ -98,58 +81,52 @@ nav {
 .search {
   color: #fff;
   background-color: #0065fc;
-  width: 125px;
   margin-left: -2px;
   border: 1px #0065fc solid;
-  border-radius: 0 15px 15px 0;
+}
+
+.search:hover, .search:focus {
+  border-color: #deebff;
+  background-color: #deebff;
+  color: #0065fc;
 }
 
      /*---------------------- Filtres de recherche ----------------------*/
 
-.listefiltres {width: 100%; margin-top: 31px;}
-
-.listefiltres h3 {margin-top: 12px;}
 
 .filtres {text-decoration: none;}
 
-.btnfiltres {margin-left: 32px;}
-
-.filtre:hover, .filtre:focus {box-shadow: 2px 1px 1px #d9d9d9;}
+.filtre:hover, .filtre:focus {border-color: #d9d9d9;}
 
 .iconefiltre {
   color: #0065fc;
   background-color: #deebff;
-  border-radius: 50px/ 50px;
+  border-radius: 50px;
   float: left;
-  margin-right: -20px;
   position: relative;
   z-index: 1;
 }
 
-.fa-money-bill-wave {width: 39px;  margin-right: -50px;  padding: 17px 0 0 11px;}
+.fa-money-bill-wave {width: 39px;}
 
-.fa-child {width: 33px; margin-right: -50px; padding: 17px 0 0 17px;}
+.fa-child {width: 33px;}
 
-.fa-heart {width: 36px;   margin-right: -50px; padding: 17px 0 0 14px;}
+.fa-heart {width: 36px;}
 
 .fa-dog {
   width: 37px;
   height: 35px;
-  margin-right: -50px;
-  padding: 15px 0 0 13px;
 }
 
 .fa-money-bill-wave, .fa-child, .fa-heart {height: 32px;}
 
 .filtre {
   font-weight: bold;
-  margin-right: 24px;
-  border: 2px #d9d9d9 solid;
-  border-radius: 50px/ 50px;
+  border: 2px #f2f2f2 solid;
+  border-radius: 50px;
   background-color: #fff;
 }
 
-.filtre-eco, .filtre-familial, .filtre-romantique, .filtre-animaux {padding-left: 40px;}
 
 .filtre-eco {width: 194px;}
 
@@ -161,25 +138,27 @@ nav {
 
      /*------------ Ligne informative : nombre hébergements dispo -----------*/
 
-.info {width: 100%; height: 24px; margin: 35px 0 0 0;}
+.info {width: 100%; height: 24px;}
 
 .fa-info {
   width: 13px;
   height: 17px;
   color: #0065fc;
   background-color: #fff;
-  border: 2px #d9d9d9 solid;
-  border-radius: 50px/ 50px;
-  margin: 0 18px 0 9px;
-  padding: 4px 0 0 8px;
+  border: 2px #f2f2f2 solid;
+  border-radius: 50px;
 }
 
 /*____________________________________ Main ____________________________________*/
 
+main {
+  display: flow-root;
+  flex-flow: column;
+}
 
   /*------------------- Grand conteneur des héébergements -------------------*/
 
-#hebergements {max-width: 100%; max-height: 780px;}
+#hebergements {max-width: 100%;}
 
 .hconteneur-flexible a, .pconteneur-flexible a {
   text-decoration: none;
@@ -188,7 +167,7 @@ nav {
 
 .hélément-flexible:hover, .pélément-flexible:hover, .hélément-flexible:focus, .pélément-flexible:focus {box-shadow: none;}
 
-.note {margin: 0 0 1% 5%; justify-content: flex-start;}
+.note {justify-content: flex-start;}
 
 .fa-star.active {color: #0065fc;} /* couleur des étoiles actives : bleu */
 
@@ -197,62 +176,42 @@ nav {
      /*--------------------- Liste des hébergements ---------------------*/
 
 .hebliste {
-  width: 65%;
   float: left;
-  height: 710px;
-  margin-top: 37px;
-  background-color: #d9d9d9;
-  border-radius: 20px 20px 20px 20px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
 }
 
-.hebliste h2 {
-  margin: 47px 5% 10px 5%;
-  max-width: 100%;
-  align-items: center;
+.hebliste h2 {max-width: 100%;  align-items: center;
 }
 
 .hconteneur-flexible {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  height: 550px;
-  padding: 0 2.8%;
   justify-content: space-between;
 }
 
 .hélément-flexible {
-  width: 28.5%;
-  max-height: 80%;
-  max-height: 230px;
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 4px 2px 5px #bdbdbd;
-  margin: 1.9% 2%;
 }
-
-
-.hfigure {
-  width: 95%;
-  margin: 2.5% 2% 2.5% 2.5%;
-}
-
 
 .imghebergement {
   width: 100%;
-  height: 130px;
   border-radius: 15px 15px 0 0;
   object-fit: cover; /* permet de remplir l'espace souhaité tout en gardant les proportions de l'img (pas d'img visuellement écrasée)*/
 }
 
-.hfigcaption {max-width: 100%; }
+.hfigcaption {max-width: 100%;}
 
-.hfigcaption h4 {font-weight: bolder; margin: 3% 0 3% 5%;}
+.hfigcaption h4 {font-weight: bolder;}
 
-.hfigcaption p {margin: 0 5% 2% 5%; max-width: 100%;}
+.hfigcaption p {max-width: 100%;}
 
+/* Bouton pour afficher plus d'hébergements */
 #more {
-  margin: 5px 0 0 5%;
-  background-color: #d9d9d9;
+  background-color: #f2f2f2;
   border: none;
   font-size: 1.2em;
 }
@@ -263,27 +222,17 @@ nav {
 
 .populiste {
   width: 30%;
-  height: 710px;
   float: right;
-  margin-top: 37px;
-  background-color: #d9d9d9;
-  border-radius: 20px 20px 20px 20px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
 }
 
-.en-tete-populaire {
-  width: 90%;
-  margin: 30px 20px -2px 25px;
-  display: inline-flex;
-}
+.en-tete-populaire {width: 90%; display: inline-flex;}
 
-.populiste h2 {
-  width: 95%;
-  margin-left: 20px;
-}
+.populiste h2 {width: 95%; height: 100%;}
 
 .fa-chart-line {
   height: 100%;
-  margin: 18px 20px 0 0;
   float: right;
 }
 
@@ -291,8 +240,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  margin: -1px 10px 5px 10px;
-  padding: 0 2.8%;
   justify-content: space-between;
   box-sizing: border-box;
 }
@@ -300,19 +247,13 @@ nav {
 .pélément-flexible {
   display: flex;
   max-width: 95%;
-  height: 165px;
   background-color: #fff;
-  border-radius: 25px 25px 25px 25px;
+  border-radius: 25px;
   box-shadow: 4px 2px 5px #bdbdbd;
-  margin: 9px  20px  20px  20px;
-  padding: 0.5% 8% 0.5% 0.5%;
 }
 
 .pfigure {
   width: 100%;
-  min-height: 150px;
-  max-height: 165px;
-  margin: 1.5%;
   display: flex;
 
 }
@@ -326,17 +267,86 @@ nav {
 }
 
 .pfigcaption {
-  max-width: 170px;
-  margin: 15px 0 0 20px;
   position: relative; /* mise en flux normal pour pouvoir travailler .notehebpopulaire tout en bas de ces figcaption */
 }
 
-.pfigcaption h4 {font-weight: bolder; width: 100%; margin: 1% 0 3% 5%;}
+.pfigcaption h4 {font-weight: bolder; width: 100%;}
 
-.pfigcaption p {margin: 0 5% 2% 5%; max-width: 100%;}
+.pfigcaption p {max-width: 100%;}
 
 .notehebpopulaire {
   position: absolute; /* retirer l'élément du flux normal */
   bottom: 0; /* positionnement de l'élément tout en bas de .pfigure */
-  margin-left: 3%; /* une marge de 3% pour l'aligner avec les autres élément de .pfigcaption */
-  } /*
+  }
+
+
+  /*------------------------------- Activités ------------------------------*/
+
+.aconteneur {
+  width: 100%;
+  display: grid; /* pour pouvoir créer une grille */
+  justify-content: space-between;
+}
+
+.aelement {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 4px 2px 5px #bdbdbd;
+}
+
+.aelement:hover, .aelement:focus {box-shadow: none;}
+
+.box1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.box4 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.box2, .box3 {grid-column: 2 / 3;}
+
+.box2, .box5 {grid-row: 1 / 2;}
+
+.box3, .box6 {grid-row: 2 / 3;}
+
+.box5, .box6 {grid-column: 4 / 5;}
+
+.afigure {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.imgactivites {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+/*___________________________________ Footer ___________________________________*/
+
+footer {
+  max-width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  /* Pour que le footer remplisse toute la largeur de la page */
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+footer section {
+  width: 100%;
+  display: inline-flex;
+}
+
+.liensfooter {list-style: none;}
+
+.liensfooter li a {
+  text-decoration: none;
+  color: #000;
+}
