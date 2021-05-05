@@ -2,11 +2,11 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="/css/style.css"> <!-- Version générale-->
-    <link rel="stylesheet" media="screen and (min-width: px; max-width: px)" href="smallscreen.css"> <!-- Pour résolution d'écran inférieure ou égale à 1440px-->
-    <link rel="stylesheet" media="screen and (min-width: px; max-width: px)" href="mediumscreen.css"> <!-- Pour résolution d'écran inférieure ou égale à 1440px-->
-    <link rel="stylesheet" media="screen and (min-min-width: px; max-width: px)" href="largescrren.css"> <!-- Pour résolution d'écran inférieure ou égale à 1440px-->
-    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="bigscreen.css"> <!-- Pour résolution d'écran inférieure ou égale à 1440px-->
+    <link rel="stylesheet" href="/css/style.css"> <!-- Version générale -->
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="smallscreen.css"> <!-- Pour résolution d'écran inférieure à 768px (smartphones) -->
+    <link rel="stylesheet" media="screen and (min-width: 768px; max-width: 1199px)" href="mediumscreen.css"> <!-- Pour résolution d'écran comprises entre 768px et 991px (tablettes) -->
+    <link rel="stylesheet" media="screen and (min-width: 992px; max-width: 1199px)" href="largescrren.css"> <!-- Pour résolution d'écran comprises entre 992px et 1199px (PC portables) -->
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="bigscreen.css"> <!-- Pour résolution d'écran supérieure ou égale à 1200px (PC et écrans de télévision)-->
     <script src="https://kit.fontawesome.com/23c1a897ea.js" crossorigin="anonymous"></script> <!-- Script permettant d'utiliser les icônes Font Awesome -->
     <title>Reservia</title>
   </head>
@@ -230,30 +230,33 @@
 
       <!-- Activités possibles -->
       <div id="activites">
-        <div class="format-xl">
-          <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="aportrait">
-          <h4>Vieux Port</h4>
-        </div>
-        <div class="format-l">
-          <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="apaysage">
-          <h4>Fort de Pomègues</h4>
-        </div>
-        <div class="format-s">
-          <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="apaysage">
-          <h4>Îles du Frioul</h4>
-        </div>
-        <div class="format-xl">
-          <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="aportrait">
-          <h4>Parc National des Calanques</h4>
-        </div>
-        <div class="format-m">
-          <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="apaysage">
-          <h4>Notre-Dame-de-la-Garde</h4>
-        </div>
-        <div class="format-m">
-          <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="apaysage">
-          <h4>Parc Longchamp</h4>
-        </div>
+        <section class="activitesliste">
+          <h2>Activités à Marseille</h2>
+          <a class="format-xl">
+            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="aportrait">
+            <h4>Vieux Port</h4>
+          </a>
+          <a class="format-l">
+            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="apaysage">
+            <h4>Fort de Pomègues</h4>
+          </a>
+          <a class="format-s">
+            <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="apaysage">
+            <h4>Îles du Frioul</h4>
+          </a>
+          <a class="format-xl">
+            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="aportrait">
+            <h4>Parc National des Calanques</h4>
+          </a>
+          <a class="format-m">
+            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="apaysage">
+            <h4>Notre-Dame-de-la-Garde</h4>
+          </a>
+          <a class="format-m">
+            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="apaysage">
+            <h4>Parc Longchamp</h4>
+          </a>
+        </section>
       </div>
     </main>
 
