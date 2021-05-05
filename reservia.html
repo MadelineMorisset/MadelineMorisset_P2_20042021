@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="/css/style.css"> <!-- Version générale-->
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="smallscreen.css"> <!-- Pour résolution d'écran inférieure à 768px (smartphone)-->
-    <link rel="stylesheet" media="screen and (min-width: 768px; max-width: 991px)" href="mediumscreen.css"> <!-- Pour résolution d'écran comprise entre 768px et 991px (tablettes)-->
-    <link rel="stylesheet" media="screen and (min-min-width: 992px; max-width: 1199px)" href="largescrren.css"> <!-- Pour résolution d'écran comprise entre 992px et 1199px (PC portables) -->
-    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="bigscreen.css"> <!-- Pour résolution d'écran supérieure ou égale à 1200px (PC et écrans TV)-->
+    <link rel="stylesheet" media="screen and (max-width: 768px;)" href="/css/smallscreens.css"> <!-- Pour résolution d'écran inférieure à 768px (smartphone)-->
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="/css/mediumscreens.css"> <!-- Pour résolution d'écran comprise entre 768px et 991px (tablettes)-->
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="/css/largescreens.css"> <!-- Pour résolution d'écran comprise entre 992px et 1199px (PC portables) -->
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="/css/bigscreens.css"> <!-- Pour résolution d'écran supérieure ou égale à 1200px (PC et écrans TV)-->
     <script src="https://kit.fontawesome.com/23c1a897ea.js" crossorigin="anonymous"></script> <!-- Script permettant d'utiliser les icônes Font Awesome -->
     <title>Reservia</title>
   </head>
@@ -230,53 +230,53 @@
 
       <!-- Activités possibles -->
       <div id="activites">
-        <section>
+        <section class="activitesliste">
           <h2>Activités à Marseille</h2>
-          <article class="activitesliste">
-            <a class="format-xl">
-              <figure>
-                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="aportrait">
-                <figcaption>
+          <article class="aconteneur">
+            <a class="box1 aelement">
+              <figure class="afigure">
+                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="imgactivites img-xl">
+                <figcaption class="afigcaption">
                   <h4>Vieux Port</h4>
                 </figcaption>
               </figure>
             </a>
-            <a class="format-l">
-              <figure>
-                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="apaysage">
-                <figcaption>
+            <a class="box2 aelement">
+              <figure class="afigure">
+                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="imgactivites img-l">
+                <figcaption class="afigcaption">
                   <h4>Fort de Pomègues</h4>
                 </figcaption>
               </figure>
             </a>
-            <a class="format-s">
-              <figure>
-                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="apaysage">
-                <figcaption>
+            <a class="box3 aelement">
+              <figure class="afigure">
+                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="imgactivites img-s">
+                <figcaption class="afigcaption">
                   <h4>Îles du Frioul</h4>
                 </figcaption>
               </figure>
             </a>
-            <a class="format-xl">
-              <figure>
-                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="aportrait">
-                <figcaption>
+            <a class="box4 aelement">
+              <figure class="afigure">
+                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="imgactivites img-xl">
+                <figcaption class="afigcaption">
                   <h4>Parc National des Calanques</h4>
                 </figcaption>
               </figure>
             </a>
-            <a class="format-m">
-              <figure>
-                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="apaysage">
-                <figcaption>
+            <a class="box5 aelement">
+              <figure class="afigure">
+                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="imgactivites img-m">
+                <figcaption class="afigcaption">
                   <h4>Notre-Dame-de-la-Garde</h4>
                 </figcaption>
               </figure>
             </a>
-            <a class="format-m">
-              <figure>
-                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="apaysage">
-                <figcaption>
+            <a class="box6 aelement">
+              <figure class="afigure">
+                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="imgactivites img-m">
+                <figcaption class="afigcaption">
                   <h4>Parc Longchamp</h4>
                 </figcaption>
               </figure>
@@ -285,24 +285,32 @@
         </section>
       </div>
     </main>
-
-    <footer>
-      <div class="a-propos">
-        <h3>À Propos</h3>
-        <a href="#">Fonctionnement du site</a>
-        <a href="#">Conditions générales de vente</a>
-        <a href="#">Données et confidentialité</a>
-      </div>
-      <div class="nos-hebergements">
-        <h3>Nos hébergements</h3>
-        <a href="#">Charte</a>
-        <a href="#">Soumettre votre hôtel</a>
-      </div>
-      <div class="assistance">
-        <h3>Assistance</h3>
-        <a href="#">Centre d'aide</a>
-        <a href="#">Nous contacter</a>
-      </div>
-    </footer>
   </body>
+
+  <footer>
+    <section>
+      <div class="a-propos partiesfooter">
+        <h3>À Propos</h3>
+        <ul class="menu-apropos liensfooter">
+          <li><a href="#">Fonctionnement du site</a></li>
+          <li><a href="#">Conditions générales de vente</a></li>
+          <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+      </div>
+      <div class="nos-hebergements partiesfooter">
+        <h3>Nos hébergements</h3>
+        <ul class="menu-noshebergements liensfooter">
+          <li><a href="#">Charte</a></li>
+          <li><a href="#">Soumettre votre hôtel</a></li>
+        </ul>
+      </div>
+      <div class="assistance partiesfooter">
+        <h3>Assistance</h3>
+        <ul class="menu-assistance liensfooter">
+          <li><a href="#">Centre d'aide</a></li>
+          <li><a href="#">Nous contacter</a></li>
+        </ul>
+      </div>
+    </section>
+  </footer>
 </html>
