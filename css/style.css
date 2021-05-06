@@ -21,8 +21,15 @@ span  {font-weight: bolder;}
 
 .logo {float: left;}
 
-  /*-------------------------- Barre de navigation --------------------------*/
-nav {font-size: 1em;}
+nav, .subtitle {font-size: 1em;}
+
+  /*-------------------------- Barre de navigation --------------------------*/*
+
+nav {
+  display: flex;
+  float: right;
+  justify-content: flex-end;
+}
 
 .menu {display: flex; list-style-type: none;}
 
@@ -40,13 +47,11 @@ nav {font-size: 1em;}
 
   /*--------------------------- Zone de recherche --------------------------*/
 
-.subtitle {font-size: 1em;}
-
 .barre-recherche, .listefiltres, .btnfiltres {display: flex;}
 
 .geoloc, .zone-recherche, .search, .listefiltres, .filtre {height: 50px;}
 
-.geoloc, .zone-recherche {border: 2px #f2f2f2 solid;}
+.geoloc, .zone-recherche {border: 2px solid #f2f2f2;}
 
 .zone-recherche, .search {font-size: 17px;}
 
