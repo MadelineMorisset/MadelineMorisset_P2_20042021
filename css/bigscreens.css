@@ -1,26 +1,31 @@
 @media screen and (min-width: 1200px) {
 /*____________________________________ Body ____________________________________*/
 
-
 /*___________________________________ Header ___________________________________*/
 
   header {margin: 53px 53px 0 53px;}
 
   .header {width: 100%; height: 34px;}
 
+  .logo {width: 102px; height: auto;}
+
 /*-------------------------- Barre de navigation --------------------------*/
 
-  .menu {padding: 0 0.5% 0 0.5%;}
+  nav {margin-top: 2px;}
+
+  .menu {padding: 0 0.5%;}
 
   .menu li {margin-right: 3%;}
 
-  .menu li a {padding: 66px 28px 0 28px;}
+  .menu li a {padding: 68px 28px 0 28px;}
 
   /*--------------------------- Zone de recherche --------------------------*/
 
   .recherche {margin-top: 52px;}
 
   .subtitle {margin-top: -13px;}
+
+  .geoloc, .zone-recherche, .search, .listefiltres, .filtre {height: 50px;}
 
     /*----------------------- Barre de recherche -----------------------*/
 
@@ -29,18 +34,9 @@
   /*  Bouton géolocalisation */
   .geoloc {
     width: 50px;
-    background-color: #f2f2f2;
-    border: 2px #dfdfdf solid;
-    border-right: none;
     border-radius: 15px 0 0 15px;
     margin-right: -2px;
   }
-
-  .geoloc:hover, .geoloc:focus {background-color: #dfdfdf;}
-
-  .fa-map-marker-alt {color: #000;}
-
-  .a-map-marker-alt:hover, .a-map-marker-alt:focus {color: #0065fc;}
 
   /* Zone de saisie */
   .zone-recherche {width: 220px; margin-bottom: 10px; padding-left: 15px;}
@@ -50,36 +46,52 @@
 
     /*---------------------- Filtres de recherche ----------------------*/
 
-  .listefiltres {width: 100%; margin-top: 31px;}
+  .listefiltres {width: 100%; margin: 31px 0 0 13px;}
 
   .listefiltres h3 {margin-top: 12px;}
 
   .btnfiltres {margin-left: 32px;}
 
-  .iconefiltre {margin-right: -40px;}
+  .iconefiltre {
+    margin-right: -40px;
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+  }
 
-  .filtre {margin-right: 24px;}
+  .fa-money-bill-wave {padding: 15px 12px;}
+
+  .fa-child {padding: 16px 16px;}
+
+  .fa-heart {padding: 16px 14px;}
+
+  .fa-dog {padding: 15px 13px;}
+
+  .filtre {margin-right: 24px; font-size: 0.8em;}
 
     /*------------ Ligne informative : nombre hébergements dispo -----------*/
 
-  .info {margin: 35px 0 0 0;}
+  .point-info {margin: 35px 0 15px 13px;}
 
-  .fa-info {margin: 0 18px 0 9px; padding: 4px 0 0 8px;}
+  .icone-info {width: 24px; height: 24px;}
+
+  .fa-info {margin: 5px 0 0 9px;}
 
 /*____________________________________ Main ____________________________________*/
 
-  main {margin: 0 53px 0 53px;}
+  main {margin: 0 53px;}
 
+  h2 {font-size: 1.3em;}
 
   /*------------------- Grand conteneur des héébergements -------------------*/
 
   #hebergements {max-height: 780px; margin-bottom: 37px;}
 
+  .hebliste, .populiste {height: 690px; margin-top: 37px;}
+
   .note {margin: 0 0 1% 5%;}
 
     /*--------------------- Liste des hébergements ---------------------*/
-
-  .hebliste {width: 65%; height: 690px; margin-top: 37px;}
 
   .hebliste h2 {margin: 47px 5% 10px 5%;}
 
@@ -91,19 +103,19 @@
 
   .imghebergement {height: 130px;}
 
-  .hfigcaption h4 {margin: 3% 0 3% 5%;}
+  .hfigcaption h4, .hfigcaption p, #more {margin-left: 5%;}
 
-  .hfigcaption p {margin: 0 5% 2% 5%;}
+  .hfigcaption h4 {margin: 3% 0;}
 
-  #more {margin: 10px 0 0 5%;}
+  .hfigcaption p {margin: 0 5% 2% 0;}
+
+  #more {margin-top: 10px; font-size: 1.1em;}
 
      /*--------------------- Héébergements populaires --------------------*/
 
-  .populiste {height: 690px; margin-top: 37px;}
-
   .en-tete-populaire {margin: 30px 10% -2px 10%;}
 
-  .fa-chart-line {margin-top: 27px; justify-content: flex-end;}
+  .fa-chart-line {margin-top: 23px; justify-content: flex-end;}
 
   .pconteneur-flexible {margin: -1px 0 5px 0; padding: 0 2.8%;}
 
@@ -117,15 +129,13 @@
 
   .pfigcaption {max-width: 170px; max-height: 130px; margin: 10px 0 0 15px;}
 
-  .pfigcaption h4 {margin: 1% 0 10px 0;}
+  .pfigcaption h4, .pfigcaption p {margin-bottom: 10px;}
 
-  .pfigcaption p {margin: 2% 0 10px 0;}
+  .pfigcaption h4 {margin-top: 1%;}
 
-  .notehebpopulaire {
-     /* une marge de 3% pour l'aligner avec les autres élément de .pfigcaption */
-    margin-left: -0.5%;
-  }
+  .pfigcaption p {margin-top: 2%;}
 
+  .notehebpopulaire {margin-left: -0.5%;}
 
   /*------------------------------- Activités ------------------------------*/
 
@@ -159,13 +169,15 @@
     object-fit: cover;
   }
 
-  .img-xl {width: 100%; height: 390px;}
+  .img-xl, .img-l, .img-m, .img-s {width: 100%;}
 
-  .img-l {width: 100%; height: 180px;}
+  .img-xl {height: 390px;}
 
-  .img-m {width: 100%; height: 153px;}
+  .img-l {height: 180px;}
 
-  .img-s {width: 100%; height: 109px;}
+  .img-m {height: 153px;}
+
+  .img-s {height: 109px;}
 
   .afigcaption h4 {margin: 15px 0 0 15px;}
 
