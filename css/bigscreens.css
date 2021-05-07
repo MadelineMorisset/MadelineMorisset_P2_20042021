@@ -4,25 +4,25 @@
 
 /*___________________________________ Header ___________________________________*/
 
-    header {margin: 53px 53px 0 53px;}
+  header {margin: 53px 53px 0 53px;}
 
-    .header {width: 100%; height: 34px;}
+  .header {width: 100%; height: 34px;}
 
-  /*-------------------------- Barre de navigation --------------------------*/
+/*-------------------------- Barre de navigation --------------------------*/
 
-    .menu {padding: 0 0.5% 0 0.5%;}
+  .menu {padding: 0 0.5% 0 0.5%;}
 
-    .menu li {margin-right: 3%;}
+  .menu li {margin-right: 3%;}
 
-    .menu li a {padding: 66px 28px 0 28px;}
+  .menu li a {padding: 66px 28px 0 28px;}
 
-    /*--------------------------- Zone de recherche --------------------------*/
+  /*--------------------------- Zone de recherche --------------------------*/
 
   .recherche {margin-top: 52px;}
 
   .subtitle {margin-top: -13px;}
 
-       /*----------------------- Barre de recherche -----------------------*/
+    /*----------------------- Barre de recherche -----------------------*/
 
   .barre-recherche {margin-top: 30px;}
 
@@ -48,7 +48,7 @@
   /* Bouton "Rechercher" */
   .search {width: 125px; border-radius: 0 15px 15px 0;}
 
-       /*---------------------- Filtres de recherche ----------------------*/
+    /*---------------------- Filtres de recherche ----------------------*/
 
   .listefiltres {width: 100%; margin-top: 31px;}
 
@@ -56,31 +56,11 @@
 
   .btnfiltres {margin-left: 32px;}
 
-  .iconefiltre {margin-right: -20px;}
-
-  .fa-money-bill-wave {margin-right: -50px;  padding: 17px 0 0 11px;}
-
-  .fa-child {margin-right: -50px; padding: 17px 0 0 17px;}
-
-  .fa-heart {margin-right: -50px; padding: 17px 0 0 14px;}
-
-  .fa-dog {margin-right: -50px; padding: 15px 0 0 13px;}
+  .iconefiltre {margin-right: -40px;}
 
   .filtre {margin-right: 24px;}
 
-  .filtre-eco, .filtre-familial, .filtre-romantique, .filtre-animaux {
-    padding-left: 40px;
-  }
-
-  .filtre-eco {width: 194px;}
-
-  .filtre-familial {width: 152px;}
-
-  .filtre-romantique {width: 184px;}
-
-  .filtre-animaux {width: 242px;}
-
-       /*------------ Ligne informative : nombre hébergements dispo -----------*/
+    /*------------ Ligne informative : nombre hébergements dispo -----------*/
 
   .info {margin: 35px 0 0 0;}
 
@@ -91,24 +71,23 @@
     main {margin: 0 53px 0 53px;}
 
 
-    /*------------------- Grand conteneur des héébergements -------------------*/
+  /*------------------- Grand conteneur des héébergements -------------------*/
 
   #hebergements {max-height: 780px; margin-bottom: 37px;}
 
   .note {margin: 0 0 1% 5%;}
 
-       /*--------------------- Liste des hébergements ---------------------*/
+    /*--------------------- Liste des hébergements ---------------------*/
 
-  .hebliste {width: 65%; height: 710px; margin-top: 37px;}
+  .hebliste {width: 65%; height: 690px; margin-top: 37px;}
 
   .hebliste h2 {margin: 47px 5% 10px 5%;}
 
-  .hconteneur-flexible {height: 550px; padding: 0 2.8%;}
+  .hconteneur-flexible {height: 530px; padding: 0 2.8%;}
 
   .hélément-flexible {
     width: 28.5%;
-    max-height: 80%;
-    max-height: 230px;
+    max-height: 240px;
     margin: 1.9% 2%;
   }
 
@@ -121,37 +100,35 @@
 
   .hfigcaption p {margin: 0 5% 2% 5%;}
 
-  #more {margin: 5px 0 0 5%;}
+  #more {margin: 10px 0 0 5%;}
 
-       /*--------------------- Héébergements populaires --------------------*/
+     /*--------------------- Héébergements populaires --------------------*/
 
-  .populiste {height: 710px; margin-top: 37px;}
+  .populiste {height: 690px; margin-top: 37px;}
 
-  .en-tete-populaire {margin: 30px 20px -2px 25px;}
+  .en-tete-populaire {margin: 30px 10% -2px 10%;}
 
-  .populiste h2 {margin-left: 20px;}
+  .fa-chart-line {margin-top: 20px; justify-content: flex-end;}
 
-  .fa-chart-line {margin: 18px 20px 0 0;}
-
-  .pconteneur-flexible {margin: -1px 10px 5px 10px; padding: 0 2.8%;}
+  .pconteneur-flexible {margin: -1px 0 5px 0; padding: 0 2.8%;}
 
   .pélément-flexible {
-    height: 165px;
+    max-height: 165px;
     margin: 9px  20px  20px  20px;
     padding: 0.5% 8% 0.5% 0.5%;
   }
 
   .pfigure {min-height: 150px; max-height: 165px; margin: 1.5%;}
 
-  .pfigcaption {max-width: 170px; margin: 15px 0 0 20px;}
+  .pfigcaption {max-width: 170px; max-height: 130px; margin: 10px 0 0 15px;}
 
-  .pfigcaption h4 {margin: 1% 0 3% 5%;}
+  .pfigcaption h4 {margin: 1% 0 10px 0;}
 
-  .pfigcaption p {margin: 0 5% 2% 5%;}
+  .pfigcaption p {margin: 2% 0 10px 0;}
 
   .notehebpopulaire {
      /* une marge de 3% pour l'aligner avec les autres élément de .pfigcaption */
-    margin-left: 3%;
+    margin-left: -0.5%;
   }
 
 
@@ -161,7 +138,7 @@
     min-width: 85%;
     max-width: 100%;
     height: 500px;
-    margin-top: 830px;
+    margin-top: 790px;
   }
 
   .aconteneur {
@@ -202,6 +179,7 @@
 
   footer {
     margin-top: 61px;
+    height: 217px;
     justify-content: space-around;
     /* Pour que le footer remplisse toute la largeur de la page */
     position: absolute;
@@ -209,7 +187,7 @@
     right: 0;
   }
 
-  footer section {width: 100%; display: inline-flex;}
+  footer section {width: 100%; margin-top: 20px; display: inline-flex;}
 
   .partiesfooter {width: 38%; margin-left: 70px;}
 

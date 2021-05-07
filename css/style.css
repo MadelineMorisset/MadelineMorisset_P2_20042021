@@ -14,14 +14,13 @@ body {font-family: Raleway;}
 
      /*--------------- Code multi-éléments & de diverses div ---------------*/
 
-
 /*___________________________________ Header ___________________________________*/
 
 span  {font-weight: bolder;}
 
 .logo {float: left;}
 
-nav, .subtitle {font-size: 1em;}
+nav {font-size: 1em;}
 
   /*-------------------------- Barre de navigation --------------------------*/*
 
@@ -53,7 +52,7 @@ nav {
 
 .geoloc, .zone-recherche {border: 2px solid #f2f2f2;}
 
-.zone-recherche, .search {font-size: 17px;}
+.zone-recherche, .search {font-size: 1.063em;}
 
      /*----------------------- Barre de recherche -----------------------*/
 
@@ -97,41 +96,37 @@ nav {
 }
 
      /*---------------------- Filtres de recherche ----------------------*/
-
-
-.filtres {text-decoration: none;}
-
-.filtre:hover, .filtre:focus {border-color: #d9d9d9;}
-
 .iconefiltre {
-  color: #0065fc;
-  background-color: #deebff;
-  border-radius: 50px;
-  float: left;
-  position: relative;
-  z-index: 1;
+ width: 50px;
+ height: 50px;
+ color: #0065fc;
+ background-color: #deebff;
+ border-radius: 50px;
+ font-size: 10px;
+ float: left;
+ position: relative;
+ z-index: 1;
 }
 
-.fa-money-bill-wave {width: 39px;}
+.iconefiltre i {margin-right: -20px;}
 
-.fa-child {width: 33px;}
+.fa-money-bill-wave {padding: 15px 12px;}
 
-.fa-heart {width: 36px;}
+.fa-child {padding: 16px 16px;}
 
-.fa-dog {
-  width: 37px;
-  height: 35px;
-}
+.fa-heart {padding: 16px 14px;}
 
-.fa-money-bill-wave, .fa-child, .fa-heart {height: 32px;}
+.fa-dog {padding: 15px 13px;}
 
 .filtre {
   font-weight: bold;
   border: 2px #f2f2f2 solid;
   border-radius: 50px;
   background-color: #fff;
+  text-decoration: none;
 }
 
+.filtre:hover, .filtre:focus {border-color: #d9d9d9;}
 
 .filtre-eco {width: 194px;}
 
@@ -161,6 +156,7 @@ main {
   flex-flow: column;
 }
 
+
   /*------------------- Grand conteneur des héébergements -------------------*/
 
 #hebergements {max-width: 100%;}
@@ -186,8 +182,7 @@ main {
   border-radius: 20px;
 }
 
-.hebliste h2 {max-width: 100%;  align-items: center;
-}
+.hebliste h2 {max-width: 100%; align-items: center;}
 
 .hconteneur-flexible {
   display: flex;
@@ -232,14 +227,9 @@ main {
   border-radius: 20px;
 }
 
-.en-tete-populaire {width: 90%; display: inline-flex;}
+.en-tete-populaire {width: 83%; display: flex;}
 
-.populiste h2 {width: 95%; height: 100%;}
-
-.fa-chart-line {
-  height: 100%;
-  float: right;
-}
+.populiste h2 {width: 100%; height: 100%;}
 
 .pconteneur-flexible {
   display: flex;
@@ -251,7 +241,7 @@ main {
 
 .pélément-flexible {
   display: flex;
-  max-width: 95%;
+  max-width: 100%;
   background-color: #fff;
   border-radius: 25px;
   box-shadow: 4px 2px 5px #bdbdbd;
@@ -265,7 +255,7 @@ main {
 
 .imghebpopulaire {
   image-orientation: left;
-  width: 40%;
+  max-width: 40%;
   height: 100%;
   border-radius: 20px 0 0 20px;
   object-fit: cover; /* permet de remplir l'espace souhaité et de garder les proportions de l'img (img visuellement non écrasée)*/
@@ -354,4 +344,8 @@ footer section {
 .liensfooter li a {
   text-decoration: none;
   color: #000;
+}
+
+.liensfooter li a:hover, .liensfooter li a:focus {
+  color: #0065fc; /* couleur de la police du lien d'inscription ou lors du survol et de la selection des deux autres liens du "nav" : bleu */
 }
