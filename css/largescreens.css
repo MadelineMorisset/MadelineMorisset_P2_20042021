@@ -11,17 +11,21 @@
 
   /*-------------------------- Barre de navigation --------------------------*/
 
+  nav {margin-top: 7px;}
+
   .menu {padding: 0 0.5% 0 0.5%;}
 
   .menu li {margin-right: 3%;}
 
-  .menu li a {padding: 54px 28px 0 28px;}
+  .menu li a {padding: 57px 28px 0 28px;}
 
     /*--------------------------- Zone de recherche --------------------------*/
 
   .recherche {margin-top: 52px;}
 
   .subtitle {margin-top: -13px;}
+
+  .geoloc, .zone-recherche, .search, .listefiltres, .filtre {height: 50px;}
 
        /*----------------------- Barre de recherche -----------------------*/
 
@@ -30,18 +34,9 @@
   /*  Bouton géolocalisation */
   .geoloc {
     width: 50px;
-    background-color: #f2f2f2;
-    border: 2px #dfdfdf solid;
-    border-right: none;
     border-radius: 15px 0 0 15px;
     margin-right: -2px;
   }
-
-  .geoloc:hover, .geoloc:focus {background-color: #dfdfdf;}
-
-  .fa-map-marker-alt {color: #000;}
-
-  .a-map-marker-alt:hover, .a-map-marker-alt:focus {color: #0065fc;}
 
   /* Zone de saisie */
   .zone-recherche {
@@ -58,21 +53,38 @@
 
        /*---------------------- Filtres de recherche ----------------------*/
 
-  .listefiltres {width: 100%; margin-top: 31px;}
+  .listefiltres {width: 100%; margin: 31px 0 0 13px;}
 
   .listefiltres h3 {margin-top: 12px;}
 
-  .btnfiltres {margin: 40px 0 0 -35px;}
+  .btnfiltres {margin: 40px 0 0 -45px;}
 
-  .iconefiltre {margin: 0 -20px -50px 0;}
+  .div-filtre {margin-top: 10px;}
 
-  .filtre {margin-right: 24px; padding-left: 25px;}
+  .iconefiltre {
+    margin: 0 -20px -50px 0;
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+  }
+
+  .fa-money-bill-wave {padding: 15px 12px;}
+
+  .fa-child {padding: 16px 16px;}
+
+  .fa-heart {padding: 16px 14px;}
+
+  .fa-dog {padding: 15px 13px;}
+
+  .filtre {margin-right: 24px; padding-left: 25px; font-size: 0.9em;}
 
        /*------------ Ligne informative : nombre hébergements dispo -----------*/
 
-  .info {margin: 60px 0 0 0;}
+  .point-info {margin: 70px 0 0 13px;}
 
-  .fa-info {margin: 0 18px 0 9px; padding: 4px 0 0 8px;}
+  .icone-info {width: 24px; height: 24px;}
+
+  .fa-info {margin: 6px 0 0 10px;}
 
 /*____________________________________ Main ____________________________________*/
 
@@ -85,7 +97,7 @@
 
   .note {margin: 0 0 1% 5%;}
 
-  .hebliste h2, .populiste h2 {font-size: 1.5em;}
+  h2 {font-size: 1.5em;}
 
        /*--------------------- Liste des hébergements ---------------------*/
 
@@ -105,7 +117,7 @@
 
   .hfigcaption p {margin: 0 5% 2% 5%;}
 
-  #more {margin: 20px 0 0 5%;}
+  #more {margin: 20px 0 0 5%; font-size: 1.3em;}
 
        /*--------------------- Héébergements populaires --------------------*/
 
