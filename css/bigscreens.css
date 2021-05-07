@@ -68,7 +68,7 @@
 
 /*____________________________________ Main ____________________________________*/
 
-    main {margin: 0 53px 0 53px;}
+  main {margin: 0 53px 0 53px;}
 
 
   /*------------------- Grand conteneur des héébergements -------------------*/
@@ -85,12 +85,7 @@
 
   .hconteneur-flexible {height: 530px; padding: 0 2.8%;}
 
-  .hélément-flexible {
-    width: 28.5%;
-    max-height: 240px;
-    margin: 1.9% 2%;
-  }
-
+  .hélément-flexible {width: 28.5%; max-height: 240px; margin: 1.9% 2%;}
 
   .hfigure {width: 95%; margin: 2.5% 2% 2.5% 2.5%;}
 
@@ -108,7 +103,7 @@
 
   .en-tete-populaire {margin: 30px 10% -2px 10%;}
 
-  .fa-chart-line {margin-top: 20px; justify-content: flex-end;}
+  .fa-chart-line {margin-top: 27px; justify-content: flex-end;}
 
   .pconteneur-flexible {margin: -1px 0 5px 0; padding: 0 2.8%;}
 
