@@ -1,7 +1,7 @@
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 /*____________________________________ Body ____________________________________*/
 
-  body {font-size: 0.7em;}
+  body {font-size: 1em;}
 
 /*___________________________________ Header ___________________________________*/
 
@@ -9,13 +9,17 @@
 
   .header {width: 100%; height: 34px;}
 
+  .logo {width: 300px; height: auto;}
+
   /*-------------------------- Barre de navigation --------------------------*/
 
-  .menu {padding: 0 0.5% 0 0.5%;}
+  nav {margin-top: 6px;}
+
+  .menu {padding: 0 0.8%;}
 
   .menu li {margin-right: 3%;}
 
-  .menu li a {padding: 54px 28px 0 28px;}
+  .menu li a {padding: 57px 28px 0 28px;}
 
     /*--------------------------- Zone de recherche --------------------------*/
 
@@ -23,147 +27,126 @@
 
   .subtitle {margin-top: -13px;}
 
+  .geoloc, .zone-recherche, .search, .listefiltres, .filtre {height: 40px;}
+
        /*----------------------- Barre de recherche -----------------------*/
 
   .barre-recherche {margin-top: 30px;}
 
   /*  Bouton géolocalisation */
   .geoloc {
-    width: 50px;
-    background-color: #f2f2f2;
-    border: 2px #dfdfdf solid;
-    border-right: none;
+    width: 40px;
     border-radius: 15px 0 0 15px;
     margin-right: -2px;
   }
 
-  .geoloc:hover, .geoloc:focus {background-color: #dfdfdf;}
-
-  .fa-map-marker-alt {color: #000;}
-
-  .a-map-marker-alt:hover, .a-map-marker-alt:focus {color: #0065fc;}
+  .fa-map-marker-alt {margin: 2px 2px 0 0;}
 
   /* Zone de saisie */
-  .zone-recherche {
-    width: 220px;
-    margin-bottom: 10px;
-    padding-left: 15px;
-  }
+  .zone-recherche {width: 220px; margin-bottom: 10px; padding-left: 15px;}
 
   /* Bouton "Rechercher" */
-  .search {
-    width: 125px;
-    border-radius: 0 15px 15px 0;
-  }
+  .search {width: 125px; border-radius: 0 15px 15px 0;}
 
        /*---------------------- Filtres de recherche ----------------------*/
 
-  .listefiltres {width: 100%; margin-top: 31px;}
+  .listefiltres {width: 100%; margin: 15px 0 0 13px;}
 
   .listefiltres h3 {margin-top: 12px;}
 
-  .btnfiltres {margin: 40px 0 0 -35px;}
+  .btnfiltres {margin: 40px 0 0 -48px;}
 
-  .iconefiltre {margin: 0 -20px -50px 0;}
+  .div-filtre {margin-top: 10px;}
 
-  .filtre {width: margin-right: 24px; padding-left: 25px;}
+  .iconefiltre {
+    width: 40px;
+    height: 40px;
+    font-size: 7px;
+    margin: 0 -20px -50px 0;
+  }
+
+  .fa-money-bill-wave {padding: 14px 11px;}
+
+  .fa-child {padding: 14px 15px;}
+
+  .fa-heart {padding: 14px 13px;}
+
+  .fa-dog {padding: 12px 12px;}
+
+  .filtre {width: margin-right: 24px; padding-left: 25px; font-size: 0.88em;}
 
        /*------------ Ligne informative : nombre hébergements dispo -----------*/
 
-  .info {margin: 60px 0 0 0;}
+  .point-info {margin: 70px 0 -10px 13px;}
 
-  .fa-info {margin: 0 18px 0 9px; padding: 4px 0 0 8px;}
+  .icone-info {width: 24px; height: 24px;}
+
+  .fa-info {margin: 6px 0 0 9px;}
 
 /*____________________________________ Main ____________________________________*/
 
-    main {margin: 0 40px 0 40px;}
+    main {margin: 0 40px;}
 
 
     /*------------------- Grand conteneur des héébergements -------------------*/
 
   #hebergements {max-height: 780px; margin-bottom: 37px;}
 
+  .hebliste, .populiste {height: 550px; margin-top: 37px;}
+
   .note {margin: 0 0 1% 5%;}
 
-  .hebliste h2, .populiste h2 {font-size: 1.5em;}
+  h2 {font-size: 1.3em;}
 
        /*--------------------- Liste des hébergements ---------------------*/
 
-  .hebliste {
-    width: 65%;
-    height: 550px;
-    margin-top: 37px;
-  }
-
   .hebliste h2 {margin: 47px 5% 10px 5%;}
 
-  .hconteneur-flexible {
-    height: 390px;
-    padding: 0 2.8%;
-  }
+  .hconteneur-flexible {height: 390px; padding: 0 2.8%;}
 
-  .hélément-flexible {
-    width: 28.5%;
-    max-height: 190px;
-    margin: 1.9% 2%;
-  }
+  .hélément-flexible {width: 28.5%; max-height: 190px; margin: 1.9% 2%;}
 
-  .hfigure {
-    width: 95%;
-    margin: 2.5% 2% 1% 2.5%;
-  }
-
+  .hfigure {width: 95%; margin: 2.5% 2% 1% 2.5%;}
 
   .imghebergement {height: 90px;}
 
-  .hfigcaption h4 {margin: 3% 0 3% 5%;}
+  .hfigcaption h4, .hfigcaption p, #more {margin-left: 5%;}
 
-  .hfigcaption p {margin: 0 5% 2% 5%;}
+  .hfigcaption h4 {margin: 3% 0;}
 
-  #more {margin: 20px 0 0 5%;}
+  .hfigcaption p {margin: 0 5% 2% 0;}
+
+  #more {margin-top: 20px 0 0 5%; font-size: 1.2em;}
 
        /*--------------------- Héébergements populaires --------------------*/
-
-  .populiste {height: 550px; margin-top: 37px;}
 
   .en-tete-populaire {margin: 30px 10% -2px 10%;}
 
   .fa-chart-line {margin-top: 20px; justify-content: flex-end;}
 
-  .pconteneur-flexible {
-    margin: -1px 10px 5px 10px;
-  }
+  .pconteneur-flexible, .pélément-flexible {margin: 0 10px;}
+
+  .pconteneur-flexible {margin: -1px 0 5px 0;}
 
   .pélément-flexible {
     height: 115px;
-    margin: 9px  10px  20px  10px;
+    margin: 9px  0  20px  0;
     padding: 0.5% 8% 0.5% 0.5%;
   }
 
-  .pfigure {
-    min-height: 90px;
-    max-height: 115px;
-    margin: 1.5%;
-  }
+  .pfigure {min-height: 90px; max-height: 115px; margin: 1.5%;}
 
-  .imghebpopulaire {width}
+  .pfigcaption {max-width: 170px; margin: 5px 0 0 5px;}
 
-  .pfigcaption {
-    max-width: 170px;
-    margin: 5px 0 0 5px;
-  }
+  .pfigcaption h4, .pfigcaption p {margin-left: 5%;}
 
-  .pfigcaption h4 {margin: 0 0 3% 5%;}
+  .pfigcaption h4 {margin-bottom: 3%;}
 
-  .pfigcaption p {margin: 0 5% 2% 5%;}
+  .pfigcaption p {margin: 0 5% 2% 0;}
 
-  .notehebpopulaire {
-    margin-left: 3%; /* une marge de 3% pour l'aligner avec les autres élément de .pfigcaption */
-    }
-
+  .notehebpopulaire {margin-left: 3%;}
 
   /*------------------------------- Activités ------------------------------*/
-
 
   #activites {
     min-width: 85%;
@@ -172,11 +155,9 @@
     margin-top: 640px;
   }
 
-  .activitesliste {
-  }
-
   .aconteneur {
-    grid-template-columns: repeat(4, 22%); /* créé une grille répétitive de 4 colonne faisant 22% de large*/
+    /* créé une grille répétitive de 4 colonne faisant 22% de large*/
+    grid-template-columns: repeat(4, 22%);
   }
 
   .box1, .box4 {height: 445px}
@@ -197,30 +178,17 @@
     object-fit: cover;
   }
 
-  .img-xl {
-    width: 100%;
-    height: 390px;
-  }
+  .img-xl, .img-l, .img-m, .img-s {width: 100%;}
 
-  .img-l {
-    width: 100%;
-    height: 180px;
-  }
+  .img-xl {height: 390px;}
 
-  .img-m {
-    width: 100%;
-    height: 153px;
-  }
+  .img-l {height: 180px;}
 
-  .img-s {
-    width: 100%;
-    height: 109px;
-  }
+  .img-m {height: 153px;}
 
-  .afigcaption h4 {
-    margin: 15px 0 0 15px;
-  }
+  .img-s {height: 109px;}
 
+  .afigcaption h4 {margin: 15px 0 0 15px;}
 
 /*___________________________________ Footer ___________________________________*/
 
