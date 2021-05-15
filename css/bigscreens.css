@@ -84,17 +84,19 @@
 
   .fa-money-bill-wave {padding: 15px 14px;}
 
-  .filtre-eco, .filtre-romantique {width: 170px;}
+  .filtre-eco, .filtre-romantique {width: 160px;}
 
   .fa-child {padding: 16px 18px;}
 
-  .filtre-familial {width: 139px;}
+  .filtre-familial {width: 129px;}
 
   .fa-heart {padding: 16px 16px;}
 
+  .filtre-romantique {width: 158px;}
+
   .fa-dog {padding: 14px 15px;}
 
-  .filtre-animaux {width: 215px;}
+  .filtre-animaux {width: 205px;}
 
      /*----------------------- Ligne informative ------------------------*/
 
