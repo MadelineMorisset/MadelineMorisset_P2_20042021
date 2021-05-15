@@ -1,0 +1,249 @@
+@media screen and (min-device-width: 1200px) {
+/*____________________________________ Body ____________________________________*/
+
+  .logo , .hélément-flexible {height: auto;}
+
+  nav, .pélément-flexible, .pfigure {display: flex;}
+
+  nav, .populiste {float: right;}
+
+  .menu, footer section {display: inline-flex;}
+
+  .menu, .fa-chart-line {justify-content: flex-end;}
+
+  .barre-recherche, .hebliste, .populiste {margin-top: 25px;}
+
+  .header, .listefiltres, .pfigcaption, .pfigcaption h4, .aconteneur,
+  .imgactivites, .img-xl, .img-l, .img-m, .img-s {
+    width: 100%;
+  }
+
+/*___________________________________ Header ___________________________________*/
+
+  header {margin: 53px 53px 0 53px;}
+
+  .header {height: 34px;}
+
+  .logo {width: 5.6em;}
+
+/*-------------------------- Barre de navigation --------------------------*/
+
+  nav {margin-top: 2px;}
+
+  .menu {padding: 0 0.5%;}
+
+  .menu li a, .connection li a  {padding: 69px 28px 0 28px;}
+
+  .menu li a:hover, .menu li a:focus, .lien-signup:hover, .lien-signup:focus {
+    border-top: 2px solid #0065fc;
+  }
+
+  /*--------------------------- Zone de recherche --------------------------*/
+
+  .recherche {margin-top: 52px;}
+
+  .subtitle {margin-top: -13px;}
+
+  .geoloc, .zone-recherche, .search,
+  .listefiltres, .iconefiltre, .filtre {
+    height: 50px;
+  }
+
+  .geoloc, .iconefiltre {width: 50px;}
+
+    /*----------------------- Barre de recherche -----------------------*/
+
+  /*  Bouton géolocalisation */
+  .geoloc {
+    border-radius: 15px 0 0 15px;
+    margin-right: -3px;
+  }
+
+  /* Zone de saisie */
+  .zone-recherche {width: 220px; margin-bottom: 10px; padding-left: 15px;}
+
+  /* Bouton "Rechercher" */
+  .search {width: 125px; margin-left: -2px; border-radius: 0 15px 15px 0;}
+
+  .searchmobile {display: none;} /* Fais disparaître cet élément */
+
+    /*---------------------- Filtres de recherche ----------------------*/
+
+  .listefiltres {margin-top: 35px;}
+
+  .listefiltres h3 {margin-top: 12px;}
+
+  .btnfiltres {margin-left: 32px;}
+
+  .iconefiltre {
+    margin-right: -40px;
+    font-size: 0.6em;
+  }
+
+  .filtre {font-size: 0.8em;}
+
+  .fa-money-bill-wave {padding: 15px 14px;}
+
+  .filtre-eco, .filtre-romantique {width: 170px;}
+
+  .fa-child {padding: 16px 18px;}
+
+  .filtre-familial {width: 139px;}
+
+  .fa-heart {padding: 16px 16px;}
+
+  .fa-dog {padding: 14px 15px;}
+
+  .filtre-animaux {width: 215px;}
+
+     /*----------------------- Ligne informative ------------------------*/
+
+  .point-info {margin: 35px 0 15px 13px;}
+
+  .icone-info {width: 24px; height: 24px;}
+
+  .fa-info {padding: 5px 0 0 9px;}
+
+  .point-info p {padding: 5px 0 5px 45px;}
+
+/*____________________________________ Main ____________________________________*/
+
+  main {margin: 0 53px;}
+
+  h2 {font-size: 1.3em;}
+
+  .hebliste, .populiste, .imghebpopulaire {height: 100%;}
+
+  .pfigcaption p, #activites {max-width: 100%;}
+
+  /*------------------- Grand conteneur des héébergements -------------------*/
+
+  #hebergements {height: 680px; margin-bottom: 37px;}
+
+  .hebliste, .populiste {border-radius: 20px;}
+
+  .note {margin-bottom: 2%;}
+
+  .hélément-flexible, .populiste {width: 30%;}
+
+  .hfigure, .populiste h2 {width: 95%;}
+
+    /*--------------------- Liste des hébergements ---------------------*/
+
+  .hebliste {width: 65%; float: left;}
+
+  .hebliste h2 {margin: 47px 5% 0 5%;}
+
+  .grilleheb {margin-top: 27px; padding: 0 5%;}
+
+  .hconteneur-flexible {height: 80%;}
+
+  .hélément-flexible {margin-bottom: 4%;}
+
+  .hfigure {margin: 2.5% 2.5% 1% 2.5%; padding-bottom: 1%;}
+
+  .imghebergement {height: 120px;}
+
+  .hfigcaption {margin-left: 5%;}
+
+  .hfigcaption h4 {margin: 2% 0;}
+
+  .hfigcaption p {margin: 0 2% 2% 0;}
+
+  #more {margin-top: 5%; font-size: 1.1em;}
+
+     /*--------------------- Héébergements populaires --------------------*/
+
+  .en-tete-populaire {width: 80%; padding: 30px 10% 10px 10%;}
+
+  .fa-chart-line {margin-top: 23px;}
+
+  .grillepopulaire {padding: 0 10%;}
+
+  .pconteneur-flexible {margin: -1px 0 5px 0;}
+
+  .pélément-flexible {height: 150px; margin-bottom: 8%; padding: 2%;}
+
+  .imghebpopulaire {max-width: 40%;}
+
+  .pfigcaption {
+    max-height: 130px;
+    margin: 10px 15px;
+    /* mise en flux normal pour pouvoir travailler .notehebpopulaire tout en
+    bas de ces figcaption */
+    position: relative;
+  }
+
+  .pfigcaption h4 {margin: 1% 0;}
+
+  .notehebpopulaire {
+    margin-left: -0.5%;
+    position: absolute; /* retirer l'élément du flux normal */
+    bottom: 0; /* positionnement de l'élément tout en bas de .pfigure */
+  }
+
+  /*------------------------------- Activités ------------------------------*/
+
+  #activites {min-width: 85%; margin-top: 80px;}
+
+  .aconteneur {
+    height: 445px;
+    display: grid; /* pour pouvoir créer une grille */
+    /* créé une grille répétitive de 4 colonne faisant 22% de large */
+    grid-template-columns: repeat(4, 22%);
+    /* créé une grille répétitive de 11 lignes faisant 9% de haut */
+    grid-template-rows: repeat(11, 9%);
+    justify-content: space-between;
+  }
+
+  .box1 {grid-column: 1 / 2;}
+
+  .box1, .box4 {grid-row: 1 / 12;}
+
+  .box2 {grid-row: 1 / 7;}
+
+  .box3 {grid-row: 8 / 12;}
+
+  .box2, .box3 {grid-column: 2 / 3;}
+
+  .box4 {grid-column: 3 / 4;}
+
+  .box5 {grid-row: 1 / 6;}
+
+  .box6 {grid-row: 7 / 12;}
+
+  .box5, .box6 {grid-column: 4 / 5;}
+
+  .afigure {margin: -0.5px 40px 0 -0.3px;}
+
+  .imgactivites {
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+  }
+
+  .img-xl {height: 390px;}
+
+  .img-l {height: 190px;}
+
+  .img-m {height: 150px;}
+
+  .img-s {height: 109px;}
+
+  .afigcaption h4 {margin: 15px 0 0 15px;}
+
+
+/*___________________________________ Footer ___________________________________*/
+
+  footer {
+    margin-top: 61px;
+    height: 217px;
+  }
+
+  footer section {width: 100%; margin-top: 20px;}
+
+  .partiesfooter {width: 38%; margin-left: 70px;}
+
+  .liensfooter {margin: 25px 0 0 -30px;}
+
+  .liensfooter li {margin-left: -10px; margin-top: 19px;}
+}

@@ -1,5 +1,231 @@
-/*---- BASE -----*/
-.menu {
-  display: flex;
-  list-style-type: none;
+/*____________________________________ Body ____________________________________*/
+
+body {
+  font-family: 'Raleway';
+  margin: 0;
 }
+
+body, .aconteneur {
+  display: flow-root; /* Pour empécher les éléments de déborder du conteneur */
+}
+
+     /*--------------- Code multi-éléments ET de diverses div ---------------*/
+
+h2, h3, h4, input, span,
+.menu li a:active, .liensfooter li a:active {
+  font-weight: bolder;
+}
+
+.lien-heb, .lien-act, .fa-map-marker-alt,
+.hconteneur-flexible a, .pconteneur-flexible a,
+.aelement, .liensfooter li a {
+  color: #000;
+}
+
+.menu, .connection, .barre-recherche, .listefiltres, .btnfiltres,
+.hconteneur-flexible, .pfigure, .en-tete-populaire, .pconteneur-flexible,
+.afigure, footer {
+  display: flex;
+}
+
+.menu li a, .connection li a, .filtre,
+.hconteneur-flexible a, .pconteneur-flexible a,
+.aelement, .liensfooter li a {
+  text-decoration: none;
+}
+
+.lien-signup, .lien-signup:visited, .menu li a:hover, .menu li a:focus,
+.fa-map-marker-alt:hover, .fa-map-marker-alt:focus,
+.search:hover, .searchmobile:hover, .search:focus, .searchmobile:focus,
+.iconefiltre, .filtre:active, .icone-info,
+figure:active, .fa-star.active, #more:active,
+.liensfooter li a:hover, .liensfooter li a:focus  {
+  color: #0065fc;
+}
+
+.geoloc, .hebliste, .populiste, footer {background-color: #f2f2f2;}
+
+.filtre, .icone-info, .hélément-flexible, .pélément-flexible, .aelement {
+  background-color: #fff;
+}
+
+.point-info, .imghebergement, .pfigure, .pfigcaption h4,
+.aconteneur, .afigure, .imgactivites, footer section {
+  width: 100%;
+}
+
+.menu, .connection, .liensfooter {list-style-type: none;}
+
+/*___________________________________ Header ___________________________________*/
+
+.logo, .iconefiltre, .icone-info {float: left;}
+
+.zone-recherche, .zone-recherche:hover, .zone-recherche:focus,
+.zone-recherche:active, .filtre {
+  border: 2px #d9d9d9 solid;
+}
+
+.search:hover, .searchmobile:hover,
+.search:focus, .searchmobile:focus,
+.iconefiltre {
+  background-color: #deebff;
+}
+
+.iconefiltre, .filtre, .icone-info {border-radius: 50px;}
+
+.iconefiltre, .icone-info {position: relative; z-index: 1;}
+
+  /*-------------------------- Barre de navigation --------------------------*/*
+
+nav {font-size: 1.05em;}
+
+.menu, .connection {
+  padding: 0;
+  text-align: center;
+}
+
+.connection {float: right; justify-content: flex-end;}
+
+.lien-signup:active {color: #4068b2;}
+
+  /*--------------------------- Zone de recherche --------------------------*/
+
+.geoloc, .zone-recherche {border: 2px solid #f2f2f2;}
+
+.zone-recherche, .search {font-size: 1.063em;}
+
+     /*----------------------- Barre de recherche -----------------------*/
+
+.barre-recherche {height: 50px;}
+
+/*  Bouton géolocalisation */
+.geoloc {justify-content: center;}
+
+.geoloc:hover, .geoloc:focus {background-color: #d9d9d9; border-color: #d9d9d9;}
+
+/* Zone de saisie */
+
+.geoloc:hover,  .zone-recherche:hover,
+.geoloc:focus, .zone-recherche:focus,
+.zone-recherche:active, {
+  border-color: #dfdfdf;
+}
+
+/* Bouton "Rechercher" */
+.search, .searchmobile {
+  background-color: #0065fc;
+  border: 2px #0065fc solid;
+  color: #fff;
+}
+
+.search:hover, .searchmobile:hover,
+.search:focus, .searchmobile:focus {
+  border-color: #deebff;
+}
+
+
+     /*---------------------- Filtres de recherche ----------------------*/
+
+.iconefiltre i {margin-right: -20px;}
+
+.filtre {
+  font-weight: bold;
+  margin-right: 24px;
+  padding-right: 22px;
+  text-align: right;
+}
+
+     /*----------------------- Ligne informative ------------------------*/
+
+.icone-info {border: 2px #f2f2f2 solid;}
+
+/*____________________________________ Main ____________________________________*/
+
+main {flex-flow: column;}
+
+.filtre:hover, .filtre:focus,
+.hélément-flexible, .pélément-flexible, .aelement {
+  box-shadow: 3px 2px 10px #bdbdbd;
+}
+
+.hélément-flexible:hover, .pélément-flexible:hover, .aelement:hover,
+.hélément-flexible:focus, .pélément-flexible:focus, .aelement:focus {
+  box-shadow: 4px 4px 5px #bdbdbd inset;
+}
+
+.hélément-flexible, .aelement {border-radius: 20px;}
+
+.imghebergement, .imghebpopulaire, .imgactivites {
+  /* permet de remplir l'espace souhaité tout en gardant les proportions de
+  l'img (pas d'img visuellement écrasée)*/
+  object-fit: cover;
+}
+
+.pconteneur-flexible, .afigure {box-sizing: border-box;}
+
+  /*------------------- Grand conteneur des héébergements -------------------*/
+
+#hebergements,
+.hebliste h2, .hconteneur-flexible, .hfigcaption, .hfigcaption p,
+.pconteneur-flexible, .pélément-flexible, .pfigcaption p {
+  max-width: 100%;
+}
+
+.hconteneur-flexible, .pconteneur-flexible {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hfigure, .pfigure {height: 100%; margin: 0;}
+
+.note {justify-content: flex-start;}
+
+.fa-star.unactive {color: #bdbdbd;}
+
+     /*--------------------- Liste des hébergements ---------------------*/
+
+.grilleheb {height: 85%;}
+
+.imghebergement {
+  border-radius: 15px 15px 0 0;
+}
+
+/* Bouton pour afficher plus d'hébergements */
+#more {background-color: inherit; border: none;}
+
+#more:hover, #more:focus, #more:active {text-decoration: underline;}
+
+     /*--------------------- Héébergements populaires --------------------*/
+
+.populiste h2 {height: 100%;}
+
+.grillepopulaire {height: 80%;}
+
+.pélément-flexible {border-radius: 25px;}
+
+.imghebpopulaire {
+  image-orientation: left;
+  border-radius: 20px 0 0 20px;
+}
+
+  /*------------------------------- Activités ------------------------------*/
+
+#activites {height: auto;}
+
+.aelement:hover, .aelement:focus {box-shadow: 3px -2px 10px #bdbdbd inset;}
+
+.afigure {flex-direction: column;}
+
+.imgactivites {border-radius: 20px 20px 0 0;}
+
+/*___________________________________ Footer ___________________________________*/
+
+footer {
+  justify-content: space-around;
+  /* Pour que le footer remplisse toute la largeur de la page */
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+footer section {display: inline-flex;}
