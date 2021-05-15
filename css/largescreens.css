@@ -3,8 +3,8 @@
 
   body {font-size: 0.8em;}
 
-  .header, .listefiltres, .pfigcaption, .pfigcaption h4,
-  .aconteneur, .imgactivites, .img-xl, .img-l, .img-m, .img-s, footer section {
+  .listefiltres, .pfigcaption, .pfigcaption h4, .aconteneur,
+  .imgactivites, .img-xl, .img-l, .img-m, .img-s {
     width: 100%;
   }
 
@@ -127,7 +127,7 @@
 
   main {margin: 0 40px;}
 
-  .hebliste, .populiste, .imghebpopulaire {height: 100%;}
+  .hebliste, .hfigure, .populiste, .pfigure, .imghebpopulaire {height: 100%;}
 
   .pfigcaption p, #activites {max-width: 100%;}
 
@@ -140,8 +140,8 @@
   .note {margin-bottom: 2%;}
 
   .hélément-flexible, .populiste {width: 30%;}
-
-  .hfigure, .pfigure {height: 100%; margin: 0;}
+  
+  .hfigure, .pfigure {margin: 0;}
 
   .hfigure, .populiste h2 {width: 95%;}
 
@@ -169,7 +169,7 @@
 
   .hfigcaption p {margin: 0 2% 2% 0;}
 
-  #more {margin-top: 5%; font-size: 1.2em;}
+  #more {margin-top: 5%;}
 
        /*--------------------- Héébergements populaires --------------------*/
 
@@ -237,11 +237,6 @@
   .box5, .box6 {grid-column: 4 / 5;}
 
   .afigure {margin: -0.5px 40px 0 -0.3px;}
-
-  .imgactivites {
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-  }
 
   .img-xl {height: 350px;}
 
