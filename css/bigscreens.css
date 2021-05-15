@@ -128,6 +128,8 @@
 
   .hélément-flexible, .populiste {width: 30%;}
 
+  .hfigure, .pfigure {height: 100%; margin: 0;}
+
   .hfigure, .populiste h2 {width: 95%;}
 
     /*--------------------- Liste des hébergements ---------------------*/

@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 768px) {
+@media screen and (max-device-width: 768px) {
 /*____________________________________ Body ____________________________________*/
 
   body {font-size: 1.8em;}
@@ -57,6 +57,8 @@
        /*----------------------- Barre de recherche -----------------------*/
 
   .barre-recherche {margin-top: 30px; width: 100%; height: 17%;}
+
+  .barre-recherche {margin-top: 50px; width: 100%; height: 17%;}
 
   .geoloc, .zone-recherche, .search, .searchmobile {height: 100px;}
 
@@ -132,12 +134,16 @@
        /*------------ Ligne informative : nombre hébergements dispo -----------*/
 
   .info {margin: 60px 0 0 0;}
+
   .point-info {margin-top: 25px;}
 
   .icone-info {width: 50px; height: 50px; border: 4px #f2f2f2 solid;}
 
   .fa-info {padding: 12px 0 0 20px;}
 
+  .icone-info {width: 50px; height: 50px; border: 4px #f2f2f2 solid;}
+
+  .fa-info {padding: 12px 0 0 20px;}
   .point-info p {padding: 5px 0 5px 70px; font-size: 1.2em;}
 
 /*____________________________________ Main ____________________________________*/
@@ -149,6 +155,7 @@
   #hebergements {
     height: auto;
     margin: 120px 0 37px 0;
+    margin: 210px 0 37px 0;
     display: flex;
     flex-wrap: wrap;
   }
@@ -165,6 +172,32 @@
     font-size: 1.4em;
     padding: 40px 50px;
   }
+
+  .hebliste h2 {padding-top: 47px;}
+
+  .grilleheb {height: auto; margin-top: 20px;}
+
+  .hconteneur-flexible {height: 100%;}
+
+  .hélément-flexible {
+    width: 100%;
+    height: auto;
+    margin-bottom: 7%;
+    box-shadow: 3px 2px 30px #bdbdbd;
+    border-radius: 40px;
+  }
+
+  .hfigure {width: 97%; margin: 1.5%; padding-bottom: -1%;}
+
+  .imghebergement {height: 300px; border-radius: 35px 35px 0 0;}
+
+  .hfigcaption, #more {margin-left: 5%;}
+
+  .hfigcaption {margin-bottom: 3%;}
+
+  .hfigcaption h4 {margin: 2% 0 1% 0;}
+
+  .hfigcaption p {margin: 0 2% 1% 0;}
 
   .hebliste h2 {padding-top: 47px;}
 
@@ -210,6 +243,8 @@
 
   .grillepopulaire {margin-top: 2px;}
 
+  .grillepopulaire {margin-top: 2px;}
+
   .pconteneur-flexible {margin-bottom: 20px;}
 
   .pélément-flexible {
@@ -223,6 +258,7 @@
   .pfigure {
     min-height: 90px;
     max-height: 115px;
+    max-height: 300px;
     display: flex;
     max-height: 300px;
     margin: 1.5%;
@@ -291,8 +327,9 @@
 
   footer {
     margin-top: 61px;
-    
+
     height: auto;
+    font-size: 1.1em;
   }
 
   footer section {
@@ -306,3 +343,6 @@
   .partiesfooter {width: 100%; margin-left: 70px; margin-bottom: 7%;}
 
   .liensfooter {margin: 25px 0 0 -30px;}
+
+  .liensfooter li {margin-top: 18px;}
+}

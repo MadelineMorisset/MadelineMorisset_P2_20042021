@@ -141,6 +141,8 @@
 
   .hélément-flexible, .populiste {width: 30%;}
 
+  .hfigure, .pfigure {height: 100%; margin: 0;}
+
   .hfigure, .populiste h2 {width: 95%;}
 
   .hfigcaption, .pfigcaption {font-size: 0.9em;}
