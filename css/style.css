@@ -1,51 +1,94 @@
 /*____________________________________ Body ____________________________________*/
 
-@font-face {
+body {
   font-family: 'Raleway';
-  src: url('font/Raleway.eot');
-  src: url('font/Raleway.eot?iefix') format('embedded-opentyper'),
-       url('font/Raleway.woff') format('woff'),
-       url('font/Raleway.woff2') format('woff2'),
-       url('font/Raleway.ttf') format('ttf'),
-       url('font/Raleway.svg#Raleway') format('svg');
+  margin: 0;
 }
 
-body {font-family: Raleway;}
+body, .aconteneur {
+  display: flow-root; /* Pour empécher les éléments de déborder du conteneur */
+}
 
-     /*--------------- Code multi-éléments & de diverses div ---------------*/
+     /*--------------- Code multi-éléments ET de diverses div ---------------*/
 
-/*___________________________________ Header ___________________________________*/
+h2, h3, h4, input, span,
+.menu li a:active, .liensfooter li a:active {
+  font-weight: bolder;
+}
 
-span  {font-weight: bolder;}
+.lien-heb, .lien-act, .fa-map-marker-alt,
+.hconteneur-flexible a, .pconteneur-flexible a,
+.aelement, .liensfooter li a {
+  color: #000;
+}
 
-.logo {float: left;}
-
-  /*-------------------------- Barre de navigation --------------------------*/*
-
-nav {
-  font-size: 1em;
+.menu, .connection, .barre-recherche, .listefiltres, .btnfiltres,
+.hconteneur-flexible, .pfigure, .en-tete-populaire, .pconteneur-flexible,
+.afigure, footer {
   display: flex;
-  float: right;
-  justify-content: flex-end;
 }
 
-.menu {display: flex; list-style-type: none;}
+.menu li a, .connection li a, .filtre,
+.hconteneur-flexible a, .pconteneur-flexible a,
+.aelement, .liensfooter li a {
+  text-decoration: none;
+}
 
-.menu li a {text-align: center; text-decoration: none;}
-
-.lien-heb, .lien-act {color: #000;}
-
-.lien-signup, .menu li a:hover, .menu li a:focus {
+.lien-signup, .lien-signup:visited, .menu li a:hover, .menu li a:focus,
+.fa-map-marker-alt:hover, .fa-map-marker-alt:focus,
+.search:hover, .searchmobile:hover, .search:focus, .searchmobile:focus,
+.iconefiltre, .filtre:active, .icone-info,
+figure:active, .fa-star.active, #more:active,
+.liensfooter li a:hover, .liensfooter li a:focus  {
   color: #0065fc;
 }
 
-.menu li a:hover, .menu li a:focus {
-  border-top: 2px solid #0065fc;
+.geoloc, .hebliste, .populiste, footer {background-color: #f2f2f2;}
+
+.filtre, .icone-info, .hélément-flexible, .pélément-flexible, .aelement {
+  background-color: #fff;
 }
 
-  /*--------------------------- Zone de recherche --------------------------*/
+.point-info, .imghebergement, .pfigure, .pfigcaption h4,
+.aconteneur, .afigure, .imgactivites, footer section {
+  width: 100%;
+}
 
-.barre-recherche, .listefiltres, .btnfiltres {display: flex;}
+.menu, .connection, .liensfooter {list-style-type: none;}
+
+/*___________________________________ Header ___________________________________*/
+
+.logo, .iconefiltre, .icone-info {float: left;}
+
+.zone-recherche, .zone-recherche:hover, .zone-recherche:focus,
+.zone-recherche:active, .filtre {
+  border: 2px #d9d9d9 solid;
+}
+
+.search:hover, .searchmobile:hover,
+.search:focus, .searchmobile:focus,
+.iconefiltre {
+  background-color: #deebff;
+}
+
+.iconefiltre, .filtre, .icone-info {border-radius: 50px;}
+
+.iconefiltre, .icone-info {position: relative; z-index: 1;}
+
+  /*-------------------------- Barre de navigation --------------------------*/*
+
+nav {font-size: 1.05em;}
+
+.menu, .connection {
+  padding: 0;
+  text-align: center;
+}
+
+.connection {float: right; justify-content: flex-end;}
+
+.lien-signup:active {color: #4068b2;}
+
+  /*--------------------------- Zone de recherche --------------------------*/
 
 .geoloc, .zone-recherche {border: 2px solid #f2f2f2;}
 
@@ -56,257 +99,133 @@ nav {
 .barre-recherche {height: 50px;}
 
 /*  Bouton géolocalisation */
-.geoloc {background-color: #f2f2f2; border: 2px #dfdfdf solid; border-right: none;}
+.geoloc {justify-content: center;}
 
-.geoloc:hover, .geoloc:focus {background-color: #dfdfdf;}
-
-.fa-map-marker-alt {color: #000;}
-
-.a-map-marker-alt:hover, .a-map-marker-alt:focus {color: #0065fc;}
+.geoloc:hover, .geoloc:focus {background-color: #d9d9d9; border-color: #d9d9d9;}
 
 /* Zone de saisie */
-.zone-recherche {
-  font-weight: thin bold;
-  border: 2px #dfdfdf solid;
-  border-left: none;
+
+.geoloc:hover,  .zone-recherche:hover,
+.geoloc:focus, .zone-recherche:focus,
+.zone-recherche:active, {
+  border-color: #dfdfdf;
 }
 
 /* Bouton "Rechercher" */
-.search {
-  color: #fff;
+.search, .searchmobile {
   background-color: #0065fc;
-  margin-left: -2px;
-  border: 1px #0065fc solid;
+  border: 2px #0065fc solid;
+  color: #fff;
 }
 
-.search:hover, .search:focus {
+.search:hover, .searchmobile:hover,
+.search:focus, .searchmobile:focus {
   border-color: #deebff;
-  background-color: #deebff;
-  color: #0065fc;
 }
+
 
      /*---------------------- Filtres de recherche ----------------------*/
-.iconefiltre {
- color: #0065fc;
- background-color: #deebff;
- border-radius: 50px;
- float: left;
- position: relative;
- z-index: 1;
-}
 
 .iconefiltre i {margin-right: -20px;}
 
 .filtre {
   font-weight: bold;
-  border: 2px #f2f2f2 solid;
-  border-radius: 50px;
-  background-color: #fff;
-  text-decoration: none;
+  margin-right: 24px;
+  padding-right: 22px;
+  text-align: right;
 }
 
-.filtre:hover, .filtre:focus {border-color: #d9d9d9;}
+     /*----------------------- Ligne informative ------------------------*/
 
-.filtre-eco {width: 194px;}
-
-.filtre-familial {width: 152px;}
-
-.filtre-romantique {width: 184px;}
-
-.filtre-animaux {width: 242px;}
-
-     /*------------ Ligne informative : nombre hébergements dispo -----------*/
-
-.point-info {width: 100%;}
-
-.point-info p {padding: 5px 0 5px 45px;}
-
-.icone-info {
-  color: #0065fc;
-  background-color: #fff;
-  border: 2px #f2f2f2 solid;
-  border-radius: 50px;
-  float: left;
-  position: relative;
-  z-index: 1;
-}
+.icone-info {border: 2px #f2f2f2 solid;}
 
 /*____________________________________ Main ____________________________________*/
 
-main {display: flow-root; flex-flow: column;}
+main {flex-flow: column;}
 
-  /*------------------- Grand conteneur des héébergements -------------------*/
-
-#hebergements {max-width: 100%;}
-
-.hconteneur-flexible a, .pconteneur-flexible a {
-  text-decoration: none;
-  color: #000;
+.filtre:hover, .filtre:focus,
+.hélément-flexible, .pélément-flexible, .aelement {
+  box-shadow: 3px 2px 10px #bdbdbd;
 }
 
-.hélément-flexible:hover, .pélément-flexible:hover,
-.hélément-flexible:focus, .pélément-flexible:focus {
-  box-shadow: none;
+.hélément-flexible:hover, .pélément-flexible:hover, .aelement:hover,
+.hélément-flexible:focus, .pélément-flexible:focus, .aelement:focus {
+  box-shadow: 4px 4px 5px #bdbdbd inset;
 }
 
-.note {justify-content: flex-start;}
+.hélément-flexible, .aelement {border-radius: 20px;}
 
-.fa-star.active {color: #0065fc;}
-
-.fa-star.unactive {color: #bdbdbd;}
-
-     /*--------------------- Liste des hébergements ---------------------*/
-
-.hebliste {width: 65%; float: left; background-color: #f2f2f2; border-radius: 20px;}
-
-.hebliste h2 {max-width: 100%; align-items: center;}
-
-.hconteneur-flexible {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 100%;
-  justify-content: space-between;
-}
-
-.hélément-flexible {
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 4px 2px 5px #bdbdbd;
-}
-
-.imghebergement {
-  width: 100%;
-  border-radius: 15px 15px 0 0;
+.imghebergement, .imghebpopulaire, .imgactivites {
   /* permet de remplir l'espace souhaité tout en gardant les proportions de
   l'img (pas d'img visuellement écrasée)*/
   object-fit: cover;
 }
 
-.hfigcaption {max-width: 100%;}
+.pconteneur-flexible, .afigure {box-sizing: border-box;}
 
-.hfigcaption h4 {font-weight: bolder;}
+  /*------------------- Grand conteneur des héébergements -------------------*/
 
-.hfigcaption p {max-width: 100%;}
+#hebergements,
+.hebliste h2, .hconteneur-flexible, .hfigcaption, .hfigcaption p,
+.pconteneur-flexible, .pélément-flexible, .pfigcaption p {
+  max-width: 100%;
+}
+
+.hconteneur-flexible, .pconteneur-flexible {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hfigure, .pfigure {height: 100%; margin: 0;}
+
+.note {justify-content: flex-start;}
+
+.fa-star.unactive {color: #bdbdbd;}
+
+     /*--------------------- Liste des hébergements ---------------------*/
+
+.grilleheb {height: 85%;}
+
+.imghebergement {
+  border-radius: 15px 15px 0 0;
+}
 
 /* Bouton pour afficher plus d'hébergements */
-#more {background-color: #f2f2f2; border: none;}
+#more {background-color: inherit; border: none;}
 
-#more :hover, #more:focus {text-decoration: underline;}
+#more:hover, #more:focus, #more:active {text-decoration: underline;}
 
      /*--------------------- Héébergements populaires --------------------*/
 
-.populiste {
-  width: 30%;
-  float: right;
-  background-color: #f2f2f2;
-  border-radius: 20px;
-}
+.populiste h2 {height: 100%;}
 
-.en-tete-populaire {width: 83%; display: flex;}
+.grillepopulaire {height: 80%;}
 
-.populiste h2 {width: 100%; height: 100%;}
-
-.pconteneur-flexible {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 100%;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-
-.pélément-flexible {
-  display: flex;
-  max-width: 100%;
-  background-color: #fff;
-  border-radius: 25px;
-  box-shadow: 4px 2px 5px #bdbdbd;
-}
-
-.pfigure {width: 100%; display: flex;}
+.pélément-flexible {border-radius: 25px;}
 
 .imghebpopulaire {
   image-orientation: left;
-  max-width: 40%;
-  height: 100%;
   border-radius: 20px 0 0 20px;
-  /* permet de remplir l'espace souhaité et de garder les proportions de l'img
-  (img visuellement non écrasée)*/
-  object-fit: cover;
 }
-
-.pfigcaption {
-  /* mise en flux normal pour pouvoir travailler .notehebpopulaire tout en
-  bas de ces figcaption */
-  position: relative;
-}
-
-.pfigcaption h4 {font-weight: bolder; width: 100%;}
-
-.pfigcaption p {max-width: 100%;}
-
-.notehebpopulaire {
-  position: absolute; /* retirer l'élément du flux normal */
-  bottom: 0; /* positionnement de l'élément tout en bas de .pfigure */
-  }
-
 
   /*------------------------------- Activités ------------------------------*/
 
-.aconteneur {
-  width: 100%;
-  display: grid; /* pour pouvoir créer une grille */
-  justify-content: space-between;
-}
+#activites {height: auto;}
 
-.aelement {
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 4px 2px 5px #bdbdbd;
-}
+.aelement:hover, .aelement:focus {box-shadow: 3px -2px 10px #bdbdbd inset;}
 
-.aelement:hover, .aelement:focus {box-shadow: none;}
+.afigure {flex-direction: column;}
 
-.box1 {grid-column: 1 / 2; grid-row: 1 / 3;}
-
-.box4 {grid-column: 3 / 4; grid-row: 1 / 2;}
-
-.box2, .box3 {grid-column: 2 / 3;}
-
-.box2, .box5 {grid-row: 1 / 2;}
-
-.box3, .box6 {grid-row: 2 / 3;}
-
-.box5, .box6 {grid-column: 4 / 5;}
-
-.afigure {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
-.imgactivites {
-  width: 100%;
-  border-radius: 20px 20px 0 0;
-  object-fit: cover;
-}
+.imgactivites {border-radius: 20px 20px 0 0;}
 
 /*___________________________________ Footer ___________________________________*/
 
 footer {
-  max-width: 100%;
-  background-color: #f2f2f2;
-  display: flex;
+  justify-content: space-around;
   /* Pour que le footer remplisse toute la largeur de la page */
   position: absolute;
   left: 0;
   right: 0;
 }
 
-footer section {width: 100%; display: inline-flex;}
-
-.liensfooter {list-style: none;}
-
-.liensfooter li a {text-decoration: none; color: #000;}
-
-.liensfooter li a:hover, .liensfooter li a:focus {color: #0065fc;}
+footer section {display: inline-flex;}
