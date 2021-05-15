@@ -53,7 +53,7 @@ figure:active, .fa-star.active, #more:active,
   background-color: #fff;
 }
 
-.point-info, .imghebergement, .pfigure, .pfigcaption h4,
+.point-info, .imghebergement, .pélément-flexible, .pfigure, .pfigcaption h4,
 .aconteneur, .afigure, .imgactivites, footer section {
   width: 100%;
 }
@@ -171,7 +171,7 @@ main {flex-flow: column;}
 
 #hebergements,
 .hebliste h2, .hconteneur-flexible, .hfigcaption,
-.pconteneur-flexible, .pélément-flexible, {
+.pconteneur-flexible {
   max-width: 100%;
 }
 
