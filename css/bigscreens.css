@@ -13,7 +13,7 @@
 
   .barre-recherche, .hebliste, .populiste {margin-top: 25px;}
 
-  .header, .listefiltres, .pfigcaption, .pfigcaption h4, .aconteneur,
+  .listefiltres, .pfigcaption, .pfigcaption h4, .aconteneur,
   .imgactivites, .img-xl, .img-l, .img-m, .img-s {
     width: 100%;
   }
@@ -112,7 +112,9 @@
 
   h2 {font-size: 1.3em;}
 
-  .hebliste, .populiste, .imghebpopulaire {height: 100%;}
+  .hebliste, .hfigure, .populiste, .pfigure, .imghebpopulaire {height: 100%;}
+
+  .pélément-flexible, .img-m {height: 150px;}
 
   .pfigcaption p, #activites {max-width: 100%;}
 
@@ -126,7 +128,11 @@
 
   .hélément-flexible, .populiste {width: 30%;}
 
+  .hfigure, .pfigure {margin: 0;}
+
   .hfigure, .populiste h2 {width: 95%;}
+
+  .hfigcaption, .pfigcaption {font-size: 0.9em;}
 
     /*--------------------- Liste des hébergements ---------------------*/
 
@@ -162,7 +168,7 @@
 
   .pconteneur-flexible {margin: -1px 0 5px 0;}
 
-  .pélément-flexible {height: 150px; margin-bottom: 8%; padding: 2%;}
+  .pélément-flexible {margin-bottom: 8%; padding: 2%;}
 
   .imghebpopulaire {max-width: 40%;}
 
@@ -216,16 +222,9 @@
 
   .afigure {margin: -0.5px 40px 0 -0.3px;}
 
-  .imgactivites {
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-  }
-
   .img-xl {height: 390px;}
 
   .img-l {height: 190px;}
-
-  .img-m {height: 150px;}
 
   .img-s {height: 109px;}
 
@@ -239,7 +238,7 @@
     height: 217px;
   }
 
-  footer section {width: 100%; margin-top: 20px;}
+  footer section {margin-top: 20px;}
 
   .partiesfooter {width: 38%; margin-left: 70px;}
 

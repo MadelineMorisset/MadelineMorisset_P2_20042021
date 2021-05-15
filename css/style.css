@@ -3,6 +3,10 @@
 body {
   font-family: 'Raleway';
   margin: 0;
+  /* Pour que le footer remplisse toute la largeur de la page */
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 body, .aconteneur {
@@ -166,8 +170,8 @@ main {flex-flow: column;}
   /*------------------- Grand conteneur des héébergements -------------------*/
 
 #hebergements,
-.hebliste h2, .hconteneur-flexible, .hfigcaption, .hfigcaption p,
-.pconteneur-flexible, .pélément-flexible, .pfigcaption p {
+.hebliste h2, .hconteneur-flexible, .hfigcaption,
+.pconteneur-flexible, .pélément-flexible, {
   max-width: 100%;
 }
 
@@ -175,8 +179,6 @@ main {flex-flow: column;}
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.hfigure, .pfigure {height: 100%; margin: 0;}
 
 .note {justify-content: flex-start;}
 
@@ -222,10 +224,6 @@ main {flex-flow: column;}
 
 footer {
   justify-content: space-around;
-  /* Pour que le footer remplisse toute la largeur de la page */
-  position: absolute;
-  left: 0;
-  right: 0;
 }
 
 footer section {display: inline-flex;}
