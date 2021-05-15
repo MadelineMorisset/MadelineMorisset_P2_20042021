@@ -152,6 +152,8 @@
 
   #hebergements {margin-bottom: 37px;}
 
+  .hfigure, .pfigure {height: 100%; margin: 0;}
+
   .note {margin-bottom: 2%;}
 
        /*--------------------- Liste des hébergements ---------------------*/

@@ -98,6 +98,7 @@
   .geoloc, .searchmobile {font-size: 1em;}
 
   /*  Bouton géolocalisation */
+
   .geoloc {border-radius: 30% 0 0 30%;}
 
   .fa-map-marker-alt {margin: 2px 2px 0 0;}
