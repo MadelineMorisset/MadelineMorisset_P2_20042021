@@ -286,11 +286,13 @@
 
 /*___________________________________ Footer ___________________________________*/
 
-  footer {margin-top: 61px;}
+  footer {margin-top: 61px; font-size: 0.8em;}
 
-  .partiesfooter {margin-left: 70px;}
+  .conteneur-footer {margin: 40px 0 50px 0;}
 
-  .liensfooter {margin: 25px 0 0 -30px;}
+  .partiesfooter {margin: 35px 70px;}
 
-  .liensfooter li {margin-top: 18px;}
+  .liensfooter {margin: 25px 0 0 -35px;}
+
+  .liensfooter li {margin-top: 40px;}
 }
